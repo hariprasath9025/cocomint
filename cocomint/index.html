@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>COCOmint — 100% Pure Natural Coconut Oil from Pollachi</title>
-  <meta name="description" content="COCOmint Natural Oils brings you 100% pure, wood-pressed coconut oil directly from the heritage groves of Pollachi, Tamil Nadu. Traditional cold-pressed excellence." />
+  <meta name="description"
+    content="COCOmint Natural Oils brings you 100% pure, wood-pressed coconut oil directly from the heritage groves of Pollachi, Tamil Nadu. Traditional cold-pressed excellence." />
   <meta property="og:title" content="COCOmint — Pure Natural Coconut Oil From Pollachi" />
-  <meta property="og:description" content="Traditional Wood-Pressed (Mara Chekku) Coconut Oil. Handcrafted in Pollachi, Tamil Nadu." />
+  <meta property="og:description"
+    content="Traditional Wood-Pressed (Mara Chekku) Coconut Oil. Handcrafted in Pollachi, Tamil Nadu." />
   <meta property="og:image" content="assets/images/hero.jpg" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Premium Google Fonts: Playfair Display (Luxury Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <script>
     tailwind.config = {
@@ -49,13 +54,14 @@
   </script>
 
   <style>
-    /* Custom Luxury Styles & Mobile-Optimized Moving Animations */
+    /* Custom Luxury Styles & Elegant Animations */
     :root {
       --gold-gradient: linear-gradient(135deg, #DFBA73 0%, #C5A059 50%, #9E7A38 100%);
       --forest-gradient: linear-gradient(135deg, #2E5640 0%, #1E3B2B 100%);
     }
 
-    html, body {
+    html,
+    body {
       background-color: #FAF7F0;
       color: #231810;
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -65,48 +71,115 @@
     }
 
     /* Prevent mobile input zooming */
-    input, select, textarea {
+    input,
+    select,
+    textarea {
       font-size: 16px !important;
     }
 
-    /* Smooth Floating Animation */
+    /* Smooth Floating Animations */
     @keyframes floatSlow {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-8px) rotate(0.8deg); }
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-8px) rotate(0.8deg);
+      }
     }
+
     @keyframes floatReverse {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(8px) rotate(-0.8deg); }
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(8px) rotate(-0.8deg);
+      }
     }
+
     @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4); }
-      50% { box-shadow: 0 0 0 14px rgba(197, 160, 89, 0); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 14px rgba(197, 160, 89, 0);
+      }
     }
+
     @keyframes rippleWa {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
-      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+
+      70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
+
     @keyframes shimmerMove {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(200%); }
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(200%);
+      }
     }
+
     @keyframes marqueeScroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes pulseSlow {
+
+      0%,
+      100% {
+        opacity: 0.35;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.6;
+        transform: scale(1.08);
+      }
     }
 
     .animate-float {
       animation: floatSlow 5s ease-in-out infinite;
     }
+
     .animate-float-reverse {
       animation: floatReverse 6s ease-in-out infinite;
     }
+
     .animate-glow {
       animation: pulseGlow 3s infinite;
     }
+
     .animate-wa-ripple {
       animation: rippleWa 2.2s infinite;
+    }
+
+    .animate-pulse-slow {
+      animation: pulseSlow 8s ease-in-out infinite;
     }
 
     /* Infinite Marquee Track */
@@ -117,12 +190,14 @@
       white-space: nowrap;
       width: 100%;
     }
+
     .marquee-content {
       display: flex;
       flex-shrink: 0;
-      animation: marqueeScroll 24s linear infinite;
+      animation: marqueeScroll 26s linear infinite;
       will-change: transform;
     }
+
     .marquee-container:hover .marquee-content {
       animation-play-state: paused;
     }
@@ -134,18 +209,20 @@
       -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(197, 160, 89, 0.25);
     }
+
     .glass-card {
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(226, 215, 195, 0.85);
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     @media (hover: hover) {
       .glass-card:hover {
-        transform: translateY(-5px);
-        border-color: rgba(197, 160, 89, 0.6);
-        box-shadow: 0 16px 36px -12px rgba(30, 59, 43, 0.12);
+        transform: translateY(-6px);
+        border-color: rgba(197, 160, 89, 0.7);
+        box-shadow: 0 20px 40px -12px rgba(30, 59, 43, 0.15);
       }
     }
 
@@ -160,25 +237,29 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
     }
+
     .btn-gold:active {
       transform: scale(0.98);
     }
+
     @media (hover: hover) {
       .btn-gold:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(197, 160, 89, 0.45);
       }
+
       .btn-gold::after {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-        width: 40%;
+        width: 45%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
         transform: skewX(-20deg) translateX(-150%);
         transition: 0.75s;
       }
+
       .btn-gold:hover::after {
         animation: shimmerMove 1.2s cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -191,9 +272,11 @@
       overflow: hidden;
       transition: all 0.3s ease;
     }
+
     .btn-forest:active {
       transform: scale(0.98);
     }
+
     @media (hover: hover) {
       .btn-forest:hover {
         transform: translateY(-2px);
@@ -207,6 +290,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .product-img-wrapper::after {
       content: "";
       position: absolute;
@@ -214,10 +298,11 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: linear-gradient(60deg, transparent 40%, rgba(255,255,255,0.25) 50%, transparent 60%);
+      background: linear-gradient(60deg, transparent 40%, rgba(255, 255, 255, 0.25) 50%, transparent 60%);
       transform: rotate(25deg) translateY(-100%);
       transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     @media (hover: hover) {
       .glass-card:hover .product-img-wrapper::after {
         transform: rotate(25deg) translateY(100%);
@@ -230,18 +315,38 @@
       transform: translateY(24px);
       transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     .reveal.active {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    /* Process Card Hover Accent */
+    .process-card {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (hover: hover) {
+      .process-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(197, 160, 89, 0.8);
+        box-shadow: 0 24px 45px -12px rgba(17, 36, 25, 0.18);
+      }
+
+      .process-card:hover .process-img {
+        transform: scale(1.08);
+      }
     }
 
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
     }
+
     ::-webkit-scrollbar-track {
       background: #F4EFE6;
     }
+
     ::-webkit-scrollbar-thumb {
       background: #C5A059;
       border-radius: 4px;
@@ -252,7 +357,8 @@
 <body class="antialiased selection:bg-brand-gold selection:text-brand-deepforest">
 
   <!-- ================= TOP LUXURY ANNOUNCEMENT BAR (MOBILE OPTIMIZED) ================= -->
-  <div class="bg-brand-deepforest text-brand-ivory text-[11px] sm:text-xs py-2 px-3 sm:px-4 tracking-wider uppercase font-medium border-b border-brand-gold/30">
+  <div
+    class="bg-brand-deepforest text-brand-ivory text-[11px] sm:text-xs py-2 px-3 sm:px-4 tracking-wider uppercase font-medium border-b border-brand-gold/30">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-1.5 sm:gap-2 truncate">
         <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-ping flex-shrink-0"></span>
@@ -260,7 +366,14 @@
         <span class="truncate">Wood-Pressed Daily in Pollachi</span>
       </div>
       <div class="flex items-center gap-4 flex-shrink-0 pl-2">
-        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20COCOmint%2C%20I%20would%20like%20to%20order%20pure%20coconut%20oil" target="_blank" class="hover:text-brand-gold transition-colors flex items-center gap-1 text-[11px] sm:text-xs">
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20COCOmint%2C%20I%20would%20like%20to%20order%20pure%20coconut%20oil"
+          target="_blank"
+          class="hover:text-brand-gold transition-colors flex items-center gap-1.5 text-[11px] sm:text-xs">
+          <!-- WhatsApp Mini SVG -->
+          <svg class="w-3.5 h-3.5 text-emerald-400 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M12.031 2C6.5 2 2 6.5 2 12.031c0 1.953.563 3.781 1.547 5.344L2.094 22l4.766-1.406A10.016 10.016 0 0 0 12.031 22C17.562 22 22 17.531 22 12.031 22 6.5 17.562 2 12.031 2zm0 18.281a8.236 8.236 0 0 1-4.25-1.172l-.312-.187-2.828.844.844-2.75-.203-.328A8.256 8.256 0 0 1 3.75 12.03c0-4.562 3.719-8.281 8.281-8.281 4.563 0 8.281 3.719 8.281 8.281 0 4.563-3.718 8.281-8.281 8.281zm4.531-6.187c-.25-.125-1.469-.719-1.688-.813-.234-.093-.39-.14-.562.125-.172.266-.672.813-.828.984-.156.172-.313.188-.563.063-.25-.125-1.047-.39-2-1.235-.734-.656-1.234-1.468-1.375-1.718-.14-.25-.016-.39.11-.516.109-.109.25-.281.374-.422.126-.14.172-.25.25-.406.079-.172.047-.328-.015-.453-.063-.125-.563-1.359-.766-1.859-.203-.5-.406-.438-.562-.438h-.485c-.171 0-.453.063-.687.313-.235.25-.891.875-.891 2.125s.906 2.453 1.031 2.625c.125.172 1.781 2.719 4.312 3.812.609.266 1.078.422 1.453.547.609.188 1.156.156 1.594.094.484-.078 1.469-.609 1.672-1.203.203-.594.203-1.094.14-1.203-.062-.094-.218-.156-.468-.281z" />
+          </svg>
           <span>WhatsApp Hotline</span>
         </a>
         <span class="hidden md:inline text-brand-gold/60">|</span>
@@ -273,15 +386,18 @@
   <header id="main-nav" class="sticky top-0 z-50 transition-all duration-300 glass-nav shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18 sm:h-20 py-2">
-        
+
         <!-- Brand Identity: PERFECT LOGO WITH ELEVATED BRANDING -->
-        <a href="#home" class="flex items-center gap-2.5 sm:gap-3.5 group flex-shrink-0">
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none">
           <!-- Perfectly sized circular logo emblem -->
-          <div class="relative w-11 h-11 sm:w-14 sm:h-14 rounded-full p-0.5 bg-gradient-to-tr from-brand-gold via-brand-forest to-brand-gold shadow-md flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
-            <img src="assets/images/logo.png" alt="COCOmint Natural Oils Logo" class="w-full h-full object-contain rounded-full bg-white shadow-inner" />
+          <div
+            class="relative w-11 h-11 sm:w-14 sm:h-14 rounded-full p-0.5 bg-gradient-to-tr from-brand-gold via-brand-forest to-brand-gold shadow-md flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <img src="assets/images/logo.png" alt="COCOmint Natural Oils Logo"
+              class="w-full h-full object-contain rounded-full bg-white shadow-inner" />
           </div>
           <div class="flex flex-col justify-center">
-            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-brand-deepforest leading-none group-hover:text-brand-forest transition-colors">
+            <span
+              class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-brand-deepforest leading-none group-hover:text-brand-forest transition-colors">
               COCO<span class="text-brand-gold">mint</span>
             </span>
             <span class="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase font-bold text-brand-forest/80 mt-1">
@@ -292,65 +408,92 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center gap-8">
-          <a href="#home" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Home</a>
-          <a href="#our-story" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Our Story</a>
-          <a href="#products" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Products</a>
-          <a href="#process" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Wood-Press Process</a>
-          <a href="#benefits" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Purity &amp; Uses</a>
-          <a href="#testimonials" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Reviews</a>
-          <a href="#contact" class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Contact</a>
+          <a href="#home"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Home</a>
+          <a href="#our-story"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Our
+            Story</a>
+          <a href="#products"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Products</a>
+          <a href="#process"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Wood-Press
+            Process</a>
+          <a href="#benefits"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Purity
+            &amp; Uses</a>
+          <a href="#testimonials"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Reviews</a>
+          <a href="#contact"
+            class="font-medium text-sm text-brand-deepforest hover:text-brand-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold hover:after:w-full after:transition-all">Contact</a>
         </nav>
 
         <!-- Right Quick Actions -->
         <div class="flex items-center gap-2 sm:gap-3">
-          <a href="#order-builder" class="hidden sm:inline-flex items-center gap-2 btn-gold text-xs px-4 sm:px-5 py-2.5 rounded-full uppercase tracking-wider font-semibold shadow-md">
+          <a href="#order-builder"
+            class="hidden sm:inline-flex items-center gap-2 btn-gold text-xs px-4 sm:px-5 py-2.5 rounded-full uppercase tracking-wider font-semibold shadow-md">
             <span>Instant Order</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
           </a>
-          
+
           <!-- Mobile Hamburger Toggle (Large 44x44 Touch Target) -->
-          <button id="mobile-toggle" aria-label="Toggle Navigation Menu" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl text-brand-deepforest hover:bg-brand-sand/50 active:bg-brand-sand transition-colors">
-            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
-            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          <button id="mobile-toggle" aria-label="Toggle Navigation Menu"
+            class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl text-brand-deepforest hover:bg-brand-sand/50 active:bg-brand-sand transition-colors">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Mobile Drawer Menu (Smooth Backdrop Blur) -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-brand-cream/98 backdrop-blur-xl border-t border-brand-border px-6 py-6 shadow-2xl transition-all duration-300">
+    <div id="mobile-menu"
+      class="hidden lg:hidden bg-brand-cream/98 backdrop-blur-xl border-t border-brand-border px-6 py-6 shadow-2xl transition-all duration-300">
       <div class="flex flex-col space-y-4 font-serif text-lg">
-        <a href="#home" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
+        <a href="#home" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
           <span>Home</span>
           <span class="text-xs font-sans text-brand-forest">01</span>
         </a>
-        <a href="#our-story" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
+        <a href="#our-story" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
           <span>Our Pollachi Story</span>
           <span class="text-xs font-sans text-brand-forest">02</span>
         </a>
-        <a href="#products" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
+        <a href="#products" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
           <span>Handcrafted Products</span>
           <span class="text-xs font-sans text-brand-forest">03</span>
         </a>
-        <a href="#process" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
+        <a href="#process" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
           <span>Traditional Mara Chekku</span>
           <span class="text-xs font-sans text-brand-forest">04</span>
         </a>
-        <a href="#benefits" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
+        <a href="#benefits" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
           <span>Health &amp; Beauty Benefits</span>
           <span class="text-xs font-sans text-brand-forest">05</span>
         </a>
-        <a href="#testimonials" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
+        <a href="#testimonials" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between border-b border-brand-border/40">
           <span>Customer Reviews</span>
           <span class="text-xs font-sans text-brand-forest">06</span>
         </a>
-        <a href="#contact" onclick="closeNav()" class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between">
+        <a href="#contact" onclick="closeNav()"
+          class="text-brand-deepforest hover:text-brand-gold py-1 flex items-center justify-between">
           <span>Get in Touch</span>
           <span class="text-xs font-sans text-brand-forest">07</span>
         </a>
       </div>
       <div class="mt-6 pt-5 border-t border-brand-border flex flex-col gap-3">
-        <a href="#order-builder" onclick="closeNav()" class="btn-gold text-center py-3.5 rounded-xl text-xs uppercase tracking-wider font-bold shadow-md">
+        <a href="#order-builder" onclick="closeNav()"
+          class="btn-gold text-center py-3.5 rounded-xl text-xs uppercase tracking-wider font-bold shadow-md">
           Place WhatsApp Order
         </a>
       </div>
@@ -361,65 +504,106 @@
   <section id="home" class="relative min-h-[88vh] sm:min-h-[92vh] flex items-center overflow-hidden bg-brand-cream">
     <!-- Rich Background Image with Responsive Luxury Vignette -->
     <div class="absolute inset-0 z-0">
-      <img src="assets/images/hero.jpg" alt="Pure COCOmint Coconut Oil with fresh coconuts" class="w-full h-full object-cover object-[center_right] sm:object-center" />
-      <div class="absolute inset-0 bg-gradient-to-r from-brand-cream via-brand-cream/95 to-brand-cream/60 sm:to-transparent"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-brand-cream via-transparent to-brand-cream/40"></div>
+      <img src="assets/images/hero.jpg" alt="Pure COCOmint Coconut Oil with fresh coconuts"
+        class="w-full h-full object-cover object-[center_right] sm:object-center" />
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-brand-cream via-brand-cream/95 to-brand-cream/60 sm:to-transparent">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-cream via-transparent to-transparent sm:hidden"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-28 w-full">
+    <!-- Soft Ambient Light Accents -->
+    <div
+      class="absolute top-1/4 left-10 w-96 h-96 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none animate-pulse-slow">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 w-full">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-        
+
         <!-- Hero Text Content -->
-        <div class="lg:col-span-7 space-y-5 sm:space-y-6">
-          
-          <!-- Animated Floating Badge (Compact on mobile) -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-forest/10 border border-brand-forest/20 backdrop-blur-md animate-float max-w-full">
-            <span class="w-2 h-2 rounded-full bg-brand-forest animate-pulse flex-shrink-0"></span>
-            <span class="text-[10px] sm:text-xs uppercase font-bold tracking-wider text-brand-forest truncate">Single-Origin &bull; Pollachi, Tamil Nadu</span>
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+
+          <!-- Refined Pill Badge with SVG Leaf -->
+          <div
+            class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-brand-forest/10 border border-brand-forest/20 text-brand-forest text-xs sm:text-xs font-semibold tracking-wider uppercase">
+            <svg class="w-3.5 h-3.5 text-brand-forest" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+            </svg>
+            <span>Single Origin &bull; 100% Wood-Pressed (Mara Chekku)</span>
           </div>
 
-          <!-- Main Headline with Elegant Serif (Scales gracefully on mobile) -->
-          <h1 class="font-serif text-3xl sm:text-5xl lg:text-7xl font-bold text-brand-deepforest leading-[1.15] tracking-tight">
-            Pure Wood-Pressed <br/>
-            <span class="italic font-normal text-brand-forest">Coconut Elixir</span> <br/>
+          <h1
+            class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-brand-deepforest leading-[1.12] tracking-tight">
+            Pure Cold-Pressed <br />
+            <span class="italic font-normal text-brand-forest">Coconut Elixir</span> <br />
             from Sacred Soil.
           </h1>
 
           <p class="text-sm sm:text-lg text-brand-earth/85 font-light leading-relaxed max-w-xl">
-            Sourced directly from the sun-bathed groves of Pollachi — Tamil Nadu's coconut heartland. Extracted using traditional wooden churns (<em class="text-brand-forest font-normal">Mara Chekku</em>) to lock in natural lauric acid, heavenly aroma, and unadulterated nourishment.
+            Sourced directly from the sun-bathed groves of Pollachi — Tamil Nadu's coconut heartland. Extracted using
+            traditional wooden churns (<em class="text-brand-forest font-normal">Mara Chekku</em>) to lock in natural
+            lauric acid, heavenly aroma, and unadulterated nourishment.
           </p>
 
           <!-- Action Buttons (Full width on small phones, inline on larger) -->
           <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-            <a href="#products" class="btn-gold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider font-bold shadow-lg inline-flex items-center justify-center gap-2 text-center">
+            <a href="#products"
+              class="btn-gold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider font-bold shadow-lg inline-flex items-center justify-center gap-2 text-center">
               <span>Explore Collection</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
             </a>
-            <a href="#our-story" class="btn-forest px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider font-bold shadow-md inline-flex items-center justify-center gap-2 text-center">
+            <a href="#our-story"
+              class="btn-forest px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider font-bold shadow-md inline-flex items-center justify-center gap-2 text-center">
               <span>Our Pollachi Heritage</span>
             </a>
           </div>
 
-
-
-          <!-- Trust Badges with Icons (3 Columns, clean spacing) -->
+          <!-- Trust Badges with Crisp SVG Icons (3 Columns, clean spacing) -->
           <div class="pt-6 sm:pt-8 border-t border-brand-border/60 grid grid-cols-3 gap-2 sm:gap-4 max-w-lg">
             <div class="flex items-center gap-2">
-              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold text-xs sm:text-sm flex-shrink-0">✓</div>
+              <div
+                class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">
+                <!-- Pure Droplet SVG -->
+                <svg class="w-4 h-4 text-brand-darkgold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                </svg>
+              </div>
               <div class="min-w-0">
                 <p class="text-[11px] sm:text-xs font-bold text-brand-deepforest truncate">100% Raw</p>
                 <p class="text-[10px] text-brand-earth/70 truncate">Unrefined</p>
               </div>
             </div>
             <div class="flex items-center gap-2">
-              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold text-xs sm:text-sm flex-shrink-0">🪵</div>
+              <div
+                class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">
+                <!-- Wood Mortar / Mara Chekku SVG -->
+                <svg class="w-4 h-4 text-brand-darkgold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 3h12l2 6H4z" />
+                  <path d="M4 9c0 7 3.5 11 8 11s8-4 8-11" />
+                  <path d="M12 9v6" />
+                </svg>
+              </div>
               <div class="min-w-0">
                 <p class="text-[11px] sm:text-xs font-bold text-brand-deepforest truncate">Mara Chekku</p>
                 <p class="text-[10px] text-brand-earth/70 truncate">Wood Churn</p>
               </div>
             </div>
             <div class="flex items-center gap-2">
-              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold text-xs sm:text-sm flex-shrink-0">🧪</div>
+              <div
+                class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">
+                <!-- Certified Shield / 0% Chemical SVG -->
+                <svg class="w-4 h-4 text-brand-darkgold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
               <div class="min-w-0">
                 <p class="text-[11px] sm:text-xs font-bold text-brand-deepforest truncate">0% Mineral</p>
                 <p class="text-[10px] text-brand-earth/70 truncate">Zero Bleach</p>
@@ -431,11 +615,21 @@
         <!-- Hero Floating Interactive Card (Desktop Showcase) -->
         <div class="lg:col-span-5 relative hidden lg:block">
           <div class="relative w-full max-w-md mx-auto">
-            
-            <!-- Floating Decorative Element 1 -->
-            <div class="absolute -top-6 -right-6 z-20 glass-card p-4 rounded-2xl shadow-xl animate-float-reverse max-w-[210px]">
+
+            <!-- Floating Decorative Element 1 with Crisp Palm Tree SVG -->
+            <div
+              class="absolute -top-6 -right-6 z-20 glass-card p-4 rounded-2xl shadow-xl animate-float-reverse max-w-[210px]">
               <div class="flex items-center gap-3">
-                <span class="text-2xl">🌴</span>
+                <div
+                  class="w-9 h-9 rounded-xl bg-brand-forest/10 flex items-center justify-center text-brand-forest flex-shrink-0">
+                  <svg class="w-5 h-5 text-brand-forest" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h11z" />
+                    <path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-11" />
+                    <path d="M5.8 11a5.8 5.8 0 0 1 3.7-1 5.8 5.8 0 0 1 5.5 5H3c0-1.8 1.1-3.3 2.8-4z" />
+                    <path d="M12 15v7" />
+                  </svg>
+                </div>
                 <div>
                   <p class="text-xs font-bold text-brand-forest">Single Farm Origin</p>
                   <p class="text-[10px] text-brand-earth/70">Directly from Pollachi</p>
@@ -444,16 +638,41 @@
             </div>
 
             <!-- Central Highlight Card -->
-            <div class="glass-card rounded-3xl p-6 shadow-2xl border-2 border-brand-gold/40 relative z-10 overflow-hidden bg-brand-cream/90 backdrop-blur-xl">
+            <div
+              class="glass-card rounded-3xl p-6 shadow-2xl border-2 border-brand-gold/40 relative z-10 overflow-hidden bg-brand-cream/90 backdrop-blur-xl">
               <div class="absolute -right-12 -top-12 w-40 h-40 bg-brand-gold/15 rounded-full blur-2xl"></div>
-              
+
               <div class="product-img-wrapper rounded-2xl overflow-hidden mb-5 aspect-[4/3]">
-                <img src="assets/images/product-1litre.jpg" alt="COCOmint 1 Litre Bottle" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                <img src="assets/images/product-1litre.jpg" alt="COCOmint 1 Litre Bottle"
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
               </div>
 
               <div class="flex items-center justify-between mb-2">
-                <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-brand-forest text-brand-ivory">Harvest Choice</span>
-                <div class="flex text-amber-500 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span
+                  class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-brand-forest text-brand-ivory">Harvest
+                  Choice</span>
+                <div class="flex items-center gap-0.5 text-amber-500">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
               </div>
 
               <h3 class="font-serif text-2xl font-bold text-brand-deepforest">COCOmint 1 Litre Royal</h3>
@@ -464,18 +683,27 @@
               <div class="flex items-center justify-between pt-3 border-t border-brand-border">
                 <div>
                   <span class="text-xs text-brand-earth/60 uppercase tracking-wider block">Special Farm Price</span>
-                  <span class="font-serif text-2xl font-bold text-brand-forest">₹520 <span class="text-xs font-normal text-brand-earth/70">/ 1 Litre</span></span>
+                  <span class="font-serif text-2xl font-bold text-brand-forest">₹520 <span
+                      class="text-xs font-normal text-brand-earth/70">/ 1 Litre</span></span>
                 </div>
-                <button onclick="quickOrder('COCOmint 1 Litre Royal Bottle')" class="btn-gold text-xs px-5 py-2.5 rounded-xl uppercase tracking-wider font-semibold">
+                <button onclick="quickOrder('COCOmint 1 Litre Royal Bottle')"
+                  class="btn-gold text-xs px-5 py-2.5 rounded-xl uppercase tracking-wider font-semibold">
                   Order Now
                 </button>
               </div>
             </div>
 
-            <!-- Floating Decorative Element 2 -->
-            <div class="absolute -bottom-6 -left-6 z-20 glass-card p-4 rounded-2xl shadow-xl animate-float max-w-[220px]">
+            <!-- Floating Decorative Element 2 with Golden Star SVG -->
+            <div
+              class="absolute -bottom-14 -left-4 sm:-left-6 z-20 glass-card p-3.5 sm:p-4 rounded-2xl shadow-xl animate-float max-w-[220px]">
               <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold text-base">🥥</div>
+                <div
+                  class="w-9 h-9 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 font-bold flex-shrink-0">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
                 <div>
                   <p class="text-xs font-bold text-brand-deepforest">4.9 / 5.0 Rating</p>
                   <p class="text-[10px] text-brand-earth/70">Loved by 2,500+ Homes</p>
@@ -490,43 +718,155 @@
     </div>
 
     <!-- Gentle Scroll Down Indicator -->
-    <a href="#marquee" class="hidden sm:flex absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-1.5 text-brand-forest/60 hover:text-brand-forest transition-colors">
+    <a href="#marquee"
+      class="hidden sm:flex absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-1.5 text-brand-forest/60 hover:text-brand-forest transition-colors">
       <span class="text-[10px] tracking-widest uppercase font-semibold">Explore</span>
-      <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
     </a>
   </section>
 
-  <!-- ================= CONTINUOUS MOVING MARQUEE TICKER (ANIMATION) ================= -->
-  <section id="marquee" class="bg-brand-forest text-brand-ivory py-3.5 sm:py-4 border-y border-brand-gold/40 relative overflow-hidden shadow-inner">
+  <!-- ================= CONTINUOUS MOVING MARQUEE TICKER (WITH LUXURY SVG ICONS) ================= -->
+  <section id="marquee"
+    class="bg-brand-forest text-brand-ivory py-3.5 sm:py-4 border-y border-brand-gold/40 relative overflow-hidden shadow-inner">
     <div class="marquee-container">
-      <div class="marquee-content flex items-center gap-6 sm:gap-8 text-xs sm:text-sm font-semibold tracking-widest uppercase">
-        <span class="flex items-center gap-2 sm:gap-3">🥥 100% WOOD-PRESSED (MARA CHEKKU)</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">🌿 SINGLE ORIGIN POLLACHI GROVES</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">✨ ZERO CHEMICALS OR PRESERVATIVES</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">💧 UNBLEACHED &amp; UNREFINED</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">🍯 RICH IN NATURAL LAURIC ACID</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">🚚 FRESH FARM TO BOTTLE DISPATCH</span>
-        <span class="text-brand-gold">&#10022;</span>
+      <div
+        class="marquee-content flex items-center gap-6 sm:gap-8 text-xs sm:text-sm font-semibold tracking-widest uppercase">
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h12l2 6H4z" />
+            <path d="M4 9c0 7 3.5 11 8 11s8-4 8-11" />
+            <path d="M12 9v6" />
+          </svg>
+          100% WOOD-PRESSED (MARA CHEKKU)
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+          SINGLE ORIGIN POLLACHI GROVES
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z" />
+          </svg>
+          ZERO CHEMICALS OR PRESERVATIVES
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+          </svg>
+          UNBLEACHED &amp; UNREFINED
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2h8" />
+            <path d="M9 2v3h6V2" />
+            <path d="M5 8h14l-1 12H6z" />
+          </svg>
+          RICH IN NATURAL LAURIC ACID
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 17h4" />
+            <path d="M5 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+            <path d="M15 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+            <path d="M5 17H3V6a1 1 0 0 1 1-1h10v12h1" />
+            <path d="M14 8h4.5l3.5 4v5h-3" />
+          </svg>
+          FRESH FARM TO BOTTLE DISPATCH
+        </span>
+        <span class="text-brand-gold">✦</span>
       </div>
-      <!-- Duplicate for seamless infinite loop -->
-      <div class="marquee-content flex items-center gap-6 sm:gap-8 text-xs sm:text-sm font-semibold tracking-widest uppercase" aria-hidden="true">
-        <span class="flex items-center gap-2 sm:gap-3">🥥 100% WOOD-PRESSED (MARA CHEKKU)</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">🌿 SINGLE ORIGIN POLLACHI GROVES</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">✨ ZERO CHEMICALS OR PRESERVATIVES</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">💧 UNBLEACHED &amp; UNREFINED</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">🍯 RICH IN NATURAL LAURIC ACID</span>
-        <span class="text-brand-gold">&#10022;</span>
-        <span class="flex items-center gap-2 sm:gap-3">🚚 FRESH FARM TO BOTTLE DISPATCH</span>
-        <span class="text-brand-gold">&#10022;</span>
+
+      <!-- Duplicate for Infinite Loop -->
+      <div
+        class="marquee-content flex items-center gap-6 sm:gap-8 text-xs sm:text-sm font-semibold tracking-widest uppercase"
+        aria-hidden="true">
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h12l2 6H4z" />
+            <path d="M4 9c0 7 3.5 11 8 11s8-4 8-11" />
+            <path d="M12 9v6" />
+          </svg>
+          100% WOOD-PRESSED (MARA CHEKKU)
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+          SINGLE ORIGIN POLLACHI GROVES
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z" />
+          </svg>
+          ZERO CHEMICALS OR PRESERVATIVES
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+          </svg>
+          UNBLEACHED &amp; UNREFINED
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2h8" />
+            <path d="M9 2v3h6V2" />
+            <path d="M5 8h14l-1 12H6z" />
+          </svg>
+          RICH IN NATURAL LAURIC ACID
+        </span>
+        <span class="text-brand-gold">✦</span>
+
+        <span class="flex items-center gap-2 sm:gap-2.5">
+          <svg class="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 17h4" />
+            <path d="M5 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+            <path d="M15 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+            <path d="M5 17H3V6a1 1 0 0 1 1-1h10v12h1" />
+            <path d="M14 8h4.5l3.5 4v5h-3" />
+          </svg>
+          FRESH FARM TO BOTTLE DISPATCH
+        </span>
+        <span class="text-brand-gold">✦</span>
       </div>
     </div>
   </section>
@@ -535,16 +875,18 @@
   <section class="py-12 sm:py-16 bg-brand-cream border-b border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
-        
+
         <div class="glass-card p-4 sm:p-6 rounded-2xl text-center reveal">
           <p class="font-serif text-3xl sm:text-5xl font-bold text-brand-forest mb-1">100%</p>
-          <p class="text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-brand-deepforest">Cold Wood-Pressed</p>
+          <p class="text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-brand-deepforest">Cold
+            Wood-Pressed</p>
           <p class="text-[10px] sm:text-[11px] text-brand-earth/70 mt-0.5">Zero heat damage</p>
         </div>
 
         <div class="glass-card p-4 sm:p-6 rounded-2xl text-center reveal">
           <p class="font-serif text-3xl sm:text-5xl font-bold text-brand-forest mb-1">50+</p>
-          <p class="text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-brand-deepforest">Years Tradition</p>
+          <p class="text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-brand-deepforest">Years Tradition
+          </p>
           <p class="text-[10px] sm:text-[11px] text-brand-earth/70 mt-0.5">Pollachi groves</p>
         </div>
 
@@ -556,7 +898,8 @@
 
         <div class="glass-card p-4 sm:p-6 rounded-2xl text-center reveal">
           <p class="font-serif text-3xl sm:text-5xl font-bold text-brand-forest mb-1">10k+</p>
-          <p class="text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-brand-deepforest">Trusted Homes</p>
+          <p class="text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-brand-deepforest">Trusted Homes
+          </p>
           <p class="text-[10px] sm:text-[11px] text-brand-earth/70 mt-0.5">Direct dispatch</p>
         </div>
 
@@ -568,26 +911,38 @@
   <section id="our-story" class="py-16 sm:py-24 bg-brand-ivory relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-        
+
         <!-- Story Visual -->
         <div class="lg:col-span-6 relative reveal">
           <div class="relative mx-auto max-w-lg">
-            
+
             <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] sm:aspect-[4/5]">
-              <img src="assets/images/our-story.jpg" alt="Lush coconut plantation in Pollachi at golden hour" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-deepforest/85 via-transparent to-transparent"></div>
-              
+              <img src="assets/images/our-story.jpg" alt="Lush coconut plantation in Pollachi at golden hour"
+                class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-deepforest/85 via-transparent to-transparent">
+              </div>
+
               <div class="absolute bottom-5 left-5 right-5 text-brand-ivory">
-                <span class="text-[10px] sm:text-[11px] uppercase tracking-widest text-brand-gold font-bold">The Coconut Heartland</span>
+                <span class="text-[10px] sm:text-[11px] uppercase tracking-widest text-brand-gold font-bold">The Coconut
+                  Heartland</span>
                 <p class="font-serif text-xl sm:text-2xl font-bold mt-1">Pollachi, Tamil Nadu</p>
-                <p class="text-[11px] sm:text-xs text-brand-ivory/80 mt-1 leading-relaxed">Nourished by the Western Ghats and rich alluvial red soil.</p>
+                <p class="text-[11px] sm:text-xs text-brand-ivory/80 mt-1 leading-relaxed">Nourished by the Western
+                  Ghats and rich alluvial red soil.</p>
               </div>
             </div>
 
-            <!-- Floating Certified Badge (Hidden on smallest mobile to prevent overlap) -->
-            <div class="hidden sm:block absolute -bottom-5 -right-5 glass-card p-3.5 rounded-2xl shadow-xl max-w-[200px] border border-brand-gold/60">
+            <!-- Floating Certified Badge (Hidden on smallest mobile to prevent overlap) with SVG Leaf -->
+            <div
+              class="hidden sm:block absolute -bottom-5 -right-5 glass-card p-3.5 rounded-2xl shadow-xl max-w-[200px] border border-brand-gold/60">
               <div class="flex items-center gap-3">
-                <span class="text-2xl">🌱</span>
+                <div
+                  class="w-8 h-8 rounded-xl bg-brand-forest/10 flex items-center justify-center text-brand-forest flex-shrink-0">
+                  <svg class="w-4 h-4 text-brand-forest" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                  </svg>
+                </div>
                 <div>
                   <p class="text-xs font-bold text-brand-forest">Single Origin</p>
                   <p class="text-[10px] text-brand-earth/70">Hand-selected copra</p>
@@ -600,38 +955,48 @@
 
         <!-- Story Narrative Content -->
         <div class="lg:col-span-6 space-y-5 sm:space-y-6 reveal">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-forest/10 text-brand-forest text-xs font-semibold uppercase tracking-widest">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-forest/10 text-brand-forest text-xs font-semibold uppercase tracking-widest">
             Our Heritage &amp; Roots
           </div>
 
           <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-deepforest leading-tight">
-            Where Ancient Groves Meet <br/>
+            Where Ancient Groves Meet <br />
             <span class="italic font-normal text-brand-forest">Pure Intent.</span>
           </h2>
 
           <p class="text-sm sm:text-base text-brand-earth/85 font-light leading-relaxed">
-            Pollachi is celebrated as South India’s coconut sanctuary. Blessed by perennial rains from the Anamalai Hills and caressed by gentle winds, our coconut palms produce copra with uniquely dense fatty acids and an incomparably sweet, clean fragrance.
+            Pollachi is celebrated as South India’s coconut sanctuary. Blessed by perennial rains from the Anamalai
+            Hills and caressed by gentle winds, our coconut palms produce copra with uniquely dense fatty acids and an
+            incomparably sweet, clean fragrance.
           </p>
 
           <p class="text-sm sm:text-base text-brand-earth/85 font-light leading-relaxed">
-            At <strong class="text-brand-deepforest font-semibold">COCOmint</strong>, we bridge the gap between this generational agro-heritage and your home. We refuse industrial solvents, high-temperature expellers, or chemical deodorizers. Each bottle is slow-pressed with patience and uncompromised purity.
+            At <strong class="text-brand-deepforest font-semibold">COCOmint</strong>, we bridge the gap between this
+            generational agro-heritage and your home. We refuse industrial solvents, high-temperature expellers, or
+            chemical deodorizers. Each bottle is slow-pressed with patience and uncompromised purity.
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div class="p-4 rounded-xl bg-brand-cream border border-brand-border">
               <h4 class="font-serif text-base sm:text-lg font-bold text-brand-deepforest">Pure Wood Press</h4>
-              <p class="text-xs text-brand-earth/70 mt-1">Slow churned at room temperature to preserve natural enzymes &amp; Vitamin E.</p>
+              <p class="text-xs text-brand-earth/70 mt-1">Slow churned at room temperature to preserve natural enzymes
+                &amp; Vitamin E.</p>
             </div>
             <div class="p-4 rounded-xl bg-brand-cream border border-brand-border">
               <h4 class="font-serif text-base sm:text-lg font-bold text-brand-deepforest">Direct From Source</h4>
-              <p class="text-xs text-brand-earth/70 mt-1">No middlemen, no blends. 100% traceable to Pollachi's fertile coconut soil.</p>
+              <p class="text-xs text-brand-earth/70 mt-1">No middlemen, no blends. 100% traceable to Pollachi's fertile
+                coconut soil.</p>
             </div>
           </div>
 
           <div class="pt-2">
-            <a href="#products" class="btn-forest w-full sm:w-auto px-7 py-3.5 rounded-xl text-xs uppercase tracking-wider font-semibold inline-flex items-center justify-center gap-2 text-center">
+            <a href="#products"
+              class="btn-forest w-full sm:w-auto px-7 py-3.5 rounded-xl text-xs uppercase tracking-wider font-semibold inline-flex items-center justify-center gap-2 text-center">
               <span>View Our Products</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </a>
           </div>
 
@@ -644,34 +1009,43 @@
   <!-- ================= PRODUCT COLLECTION ================= -->
   <section id="products" class="py-16 sm:py-24 bg-brand-cream relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal">
-        <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Direct From Our Mill</span>
+
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 reveal">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Artisanal Offerings</span>
         <div class="w-12 h-0.5 bg-brand-gold mx-auto my-3"></div>
         <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-deepforest">
-          Our Handcrafted <span class="italic font-normal text-brand-forest">Collection</span>
+          Cold-Pressed in <span class="italic font-normal text-brand-forest">Small Batches</span>
         </h2>
         <p class="text-xs sm:text-base text-brand-earth/80 mt-2.5 font-light">
-          Tap any bottle to view full details or instantly order via WhatsApp.
+          Pure, unadulterated coconut oil from our Pollachi wood presses. Free from synthetic fragrances, mineral oil,
+          or heat extraction.
         </p>
 
         <!-- Category Filters -->
         <div class="flex flex-wrap items-center justify-center gap-2 mt-6 sm:mt-8">
-          <button onclick="filterProducts('all')" class="filter-btn active px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-forest text-brand-ivory transition-all">All Bottles</button>
-          <button onclick="filterProducts('everyday')" class="filter-btn px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-ivory text-brand-deepforest border border-brand-border hover:bg-brand-sand transition-all">Daily Kitchen</button>
-          <button onclick="filterProducts('family')" class="filter-btn px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-ivory text-brand-deepforest border border-brand-border hover:bg-brand-sand transition-all">Family Packs</button>
+          <button onclick="filterProducts('all')"
+            class="filter-btn px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-forest text-brand-ivory transition-all">All
+            Sizes</button>
+          <button onclick="filterProducts('everyday')"
+            class="filter-btn px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-ivory text-brand-deepforest border border-brand-border hover:bg-brand-sand transition-all">Daily
+            Essentials</button>
+          <button onclick="filterProducts('family')"
+            class="filter-btn px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-ivory text-brand-deepforest border border-brand-border hover:bg-brand-sand transition-all">Family
+            Packs</button>
         </div>
       </div>
 
       <!-- Products Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-        
+
         <!-- Product 1: 500 ml -->
         <div class="product-item glass-card rounded-3xl overflow-hidden p-5 sm:p-6 reveal" data-category="everyday">
-          <div class="relative product-img-wrapper rounded-2xl overflow-hidden aspect-[4/3] bg-brand-ivory mb-4 sm:mb-5">
-            <img src="assets/images/product-500ml.jpg" alt="COCOmint 500ml Natural Coconut Oil" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
-            <span class="absolute top-3 left-3 bg-brand-deepforest/85 backdrop-blur-md text-brand-gold text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
+          <div
+            class="relative product-img-wrapper rounded-2xl overflow-hidden aspect-[4/3] bg-brand-ivory mb-4 sm:mb-5">
+            <img src="assets/images/product-500ml.jpg" alt="COCOmint 500ml Natural Coconut Oil"
+              class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            <span
+              class="absolute top-3 left-3 bg-brand-deepforest/85 backdrop-blur-md text-brand-gold text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
               Everyday Essential
             </span>
           </div>
@@ -679,7 +1053,31 @@
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <span class="text-xs uppercase font-bold text-brand-forest tracking-wider">500 ml Glass / PET</span>
-              <span class="text-amber-500 text-xs">&#9733;&#9733;&#9733;&#9733;&#9733; (4.9)</span>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <div class="flex gap-0.5">
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <span class="font-bold">(4.9)</span>
+              </div>
             </div>
 
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest">COCOmint Pure Oil 500ml</h3>
@@ -693,22 +1091,34 @@
                 <span class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest">₹275</span>
               </div>
               <div class="flex items-center gap-2">
-                <button onclick="openModal('500ml')" class="px-3 py-2 rounded-xl text-xs font-semibold text-brand-deepforest bg-brand-sand/60 hover:bg-brand-sand transition-colors">Details</button>
-                <button onclick="quickOrder('COCOmint Pure Coconut Oil 500ml (₹275)')" class="btn-gold px-4 py-2 rounded-xl text-xs uppercase font-bold">Order</button>
+                <button onclick="openModal('500ml')"
+                  class="px-3 py-2 rounded-xl text-xs font-semibold text-brand-deepforest bg-brand-sand/60 hover:bg-brand-sand transition-colors">Details</button>
+                <button onclick="quickOrder('COCOmint Pure Coconut Oil 500ml (₹275)')"
+                  class="btn-gold px-4 py-2 rounded-xl text-xs uppercase font-bold">Order</button>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Product 2: 1 Litre (Bestseller) -->
-        <div class="product-item glass-card rounded-3xl overflow-hidden p-5 sm:p-6 relative border-2 border-brand-gold/60 shadow-xl reveal" data-category="everyday">
-          <div class="absolute -top-3 right-5 sm:right-6 bg-brand-gold text-brand-deepforest text-[9px] sm:text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-full shadow-md z-10">
-            ★ Most Popular
+        <div
+          class="product-item glass-card rounded-3xl overflow-hidden p-5 sm:p-6 relative border-2 border-brand-gold/60 shadow-xl reveal"
+          data-category="everyday">
+          <div
+            class="absolute -top-3 right-5 sm:right-6 bg-brand-gold text-brand-deepforest text-[9px] sm:text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-full shadow-md z-10 flex items-center gap-1">
+            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <span>Most Popular</span>
           </div>
 
-          <div class="relative product-img-wrapper rounded-2xl overflow-hidden aspect-[4/3] bg-brand-ivory mb-4 sm:mb-5 mt-1">
-            <img src="assets/images/product-1litre.jpg" alt="COCOmint 1 Litre Pure Coconut Oil" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
-            <span class="absolute top-3 left-3 bg-brand-forest text-brand-ivory text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
+          <div
+            class="relative product-img-wrapper rounded-2xl overflow-hidden aspect-[4/3] bg-brand-ivory mb-4 sm:mb-5 mt-1">
+            <img src="assets/images/product-1litre.jpg" alt="COCOmint 1 Litre Pure Coconut Oil"
+              class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            <span
+              class="absolute top-3 left-3 bg-brand-forest text-brand-ivory text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
               Wood-Pressed Mara Chekku
             </span>
           </div>
@@ -716,12 +1126,37 @@
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <span class="text-xs uppercase font-bold text-brand-forest tracking-wider">1000 ml Family Size</span>
-              <span class="text-amber-500 text-xs">&#9733;&#9733;&#9733;&#9733;&#9733; (5.0)</span>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <div class="flex gap-0.5">
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <span class="font-bold">(5.0)</span>
+              </div>
             </div>
 
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest">COCOmint 1 Litre Sovereign</h3>
             <p class="text-xs text-brand-earth/80 font-light leading-relaxed line-clamp-2">
-              Our flagship cold-pressed size for households that cook wholesome South Indian delicacies and value pure nutrition.
+              Our flagship cold-pressed size for households that cook wholesome South Indian delicacies and value pure
+              nutrition.
             </p>
 
             <div class="pt-3 sm:pt-4 border-t border-brand-border flex items-center justify-between">
@@ -730,8 +1165,10 @@
                 <span class="font-serif text-xl sm:text-2xl font-bold text-brand-forest">₹520</span>
               </div>
               <div class="flex items-center gap-2">
-                <button onclick="openModal('1litre')" class="px-3 py-2 rounded-xl text-xs font-semibold text-brand-deepforest bg-brand-sand/60 hover:bg-brand-sand transition-colors">Details</button>
-                <button onclick="quickOrder('COCOmint 1 Litre Sovereign (₹520)')" class="btn-gold px-4 py-2 rounded-xl text-xs uppercase font-bold">Order</button>
+                <button onclick="openModal('1litre')"
+                  class="px-3 py-2 rounded-xl text-xs font-semibold text-brand-deepforest bg-brand-sand/60 hover:bg-brand-sand transition-colors">Details</button>
+                <button onclick="quickOrder('COCOmint 1 Litre Sovereign (₹520)')"
+                  class="btn-gold px-4 py-2 rounded-xl text-xs uppercase font-bold">Order</button>
               </div>
             </div>
           </div>
@@ -739,9 +1176,12 @@
 
         <!-- Product 3: Family Pack Combo -->
         <div class="product-item glass-card rounded-3xl overflow-hidden p-5 sm:p-6 reveal" data-category="family">
-          <div class="relative product-img-wrapper rounded-2xl overflow-hidden aspect-[4/3] bg-brand-ivory mb-4 sm:mb-5">
-            <img src="assets/images/product-family.jpg" alt="COCOmint Family Pack" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
-            <span class="absolute top-3 left-3 bg-brand-deepforest/85 backdrop-blur-md text-brand-gold text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
+          <div
+            class="relative product-img-wrapper rounded-2xl overflow-hidden aspect-[4/3] bg-brand-ivory mb-4 sm:mb-5">
+            <img src="assets/images/product-family.jpg" alt="COCOmint Family Pack"
+              class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            <span
+              class="absolute top-3 left-3 bg-brand-deepforest/85 backdrop-blur-md text-brand-gold text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
               Special Savings
             </span>
           </div>
@@ -749,7 +1189,31 @@
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <span class="text-xs uppercase font-bold text-brand-forest tracking-wider">Bundle (3L + 500ml)</span>
-              <span class="text-amber-500 text-xs">&#9733;&#9733;&#9733;&#9733;&#9733; (4.9)</span>
+              <div class="flex items-center gap-1 text-amber-500 text-xs">
+                <div class="flex gap-0.5">
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <span class="font-bold">(4.9)</span>
+              </div>
             </div>
 
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest">COCOmint Grand Family Pack</h3>
@@ -763,8 +1227,10 @@
                 <span class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest">₹1,450</span>
               </div>
               <div class="flex items-center gap-2">
-                <button onclick="openModal('family')" class="px-3 py-2 rounded-xl text-xs font-semibold text-brand-deepforest bg-brand-sand/60 hover:bg-brand-sand transition-colors">Details</button>
-                <button onclick="quickOrder('COCOmint Grand Family Pack (₹1450)')" class="btn-gold px-4 py-2 rounded-xl text-xs uppercase font-bold">Order</button>
+                <button onclick="openModal('family')"
+                  class="px-3 py-2 rounded-xl text-xs font-semibold text-brand-deepforest bg-brand-sand/60 hover:bg-brand-sand transition-colors">Details</button>
+                <button onclick="quickOrder('COCOmint Grand Family Pack (₹1450)')"
+                  class="btn-gold px-4 py-2 rounded-xl text-xs uppercase font-bold">Order</button>
               </div>
             </div>
           </div>
@@ -772,79 +1238,300 @@
 
       </div>
 
-      <div class="mt-8 sm:mt-12 text-center text-xs text-brand-earth/70 px-4">
-        📦 Fresh batches dispatched within 24 hours of cold-pressing &bull; Free delivery available on family packs.
+      <!-- Trust Notice with Delivery Truck SVG -->
+      <div class="mt-8 sm:mt-12 text-center text-xs text-brand-earth/70 px-4 flex items-center justify-center gap-2">
+        <svg class="w-4 h-4 text-brand-forest flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 17h4" />
+          <path d="M5 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+          <path d="M15 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+          <path d="M5 17H3V6a1 1 0 0 1 1-1h10v12h1" />
+          <path d="M14 8h4.5l3.5 4v5h-3" />
+        </svg>
+        <span>Fresh batches dispatched within 24 hours of cold-pressing &bull; Free delivery available on family
+          packs.</span>
       </div>
 
     </div>
   </section>
 
-  <!-- ================= TRADITIONAL PROCESS ================= -->
+  <!-- ================= TRADITIONAL PROCESS (COCONUT TO OIL PROCESSING WITH IMAGES & ELEGANT ANIMATION) ================= -->
   <section id="process" class="py-16 sm:py-24 bg-brand-ivory relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+    <!-- Soft Decorative Ambient Glow -->
+    <div class="absolute -top-32 right-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 left-0 w-96 h-96 bg-brand-forest/10 rounded-full blur-3xl pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
       <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal">
-        <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Generational Craft</span>
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-forest/10 border border-brand-forest/20 text-brand-forest text-xs font-semibold uppercase tracking-widest">
+          <svg class="w-3.5 h-3.5 text-brand-forest" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h12l2 6H4z" />
+            <path d="M4 9c0 7 3.5 11 8 11s8-4 8-11" />
+            <path d="M12 9v6" />
+          </svg>
+          Generational Farm-to-Bottle Craft
+        </div>
         <div class="w-12 h-0.5 bg-brand-gold mx-auto my-3"></div>
         <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-deepforest">
-          The Sacred Art of <span class="italic font-normal text-brand-forest">Mara Chekku</span>
+          The Sacred Journey: <span class="italic font-normal text-brand-forest">Coconut to Pure Oil</span>
         </h2>
-        <p class="text-xs sm:text-base text-brand-earth/80 mt-2.5 font-light">
-          Modern industrial mills use extreme heat and chemicals to extract more oil. We deliberately stay slow.
+        <p class="text-xs sm:text-base text-brand-earth/80 mt-2.5 font-light max-w-2xl mx-auto leading-relaxed">
+          Modern industrial mills use chemical solvents and scorching 200°C heat. We deliberately stay slow — honoring
+          the centuries-old Vaagai wood cold-pressing tradition of Pollachi.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
-        
-        <div class="glass-card p-5 sm:p-6 rounded-3xl relative reveal">
-          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-brand-forest text-brand-ivory font-serif text-lg sm:text-xl font-bold flex items-center justify-center mb-4 sm:mb-5 shadow-md">
-            01
+      <!-- 4-Step Visual Processing Journey Grid with High-Resolution Photos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 relative">
+
+        <!-- Step 01: Grove Harvest & Sun Drying -->
+        <div
+          class="process-card glass-card rounded-3xl overflow-hidden p-5 flex flex-col justify-between reveal group relative border border-brand-border/80 bg-white/90 shadow-lg">
+          <div>
+            <!-- Step Image with Smooth Zoom Effect -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 bg-brand-cream shadow-inner">
+              <img src="assets/images/process-step1.jpg" alt="Sun-drying mature coconut copra in Pollachi groves"
+                class="process-img w-full h-full object-cover transition-transform duration-700" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-deepforest/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity">
+              </div>
+              <!-- Floating Step Badge -->
+              <div
+                class="absolute top-3 left-3 w-9 h-9 rounded-xl bg-brand-forest text-brand-ivory font-serif text-sm font-bold flex items-center justify-center shadow-md ring-2 ring-brand-gold/60">
+                01
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 text-[10px] tracking-wider uppercase font-bold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-0.5 rounded-full">
+                Pollachi Groves
+              </span>
+            </div>
+
+            <!-- Step Header with SVG Icon -->
+            <div class="flex items-center gap-2 mb-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 flex-shrink-0">
+                <!-- Sun/Harvest SVG -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </div>
+              <h3
+                class="font-serif text-lg font-bold text-brand-deepforest group-hover:text-brand-forest transition-colors">
+                Sun-Drying Copra</h3>
+            </div>
+
+            <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
+              Fully matured coconuts from Pollachi farms are split by hand and naturally sun-dried on clean mats until
+              moisture drops precisely below 6%.
+            </p>
           </div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-2">Sun-Drying Copra</h3>
-          <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Only fully matured coconuts from Pollachi farms are selected, naturally split, and sun-dried until moisture is precisely below 6%.
-          </p>
+
+          <div
+            class="mt-4 pt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-brand-forest font-semibold">
+            <span>Zero artificial heat</span>
+            <span>100% Sun-Cured</span>
+          </div>
         </div>
 
-        <div class="glass-card p-5 sm:p-6 rounded-3xl relative reveal">
-          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-brand-forest text-brand-ivory font-serif text-lg sm:text-xl font-bold flex items-center justify-center mb-4 sm:mb-5 shadow-md">
-            02
+        <!-- Step 02: Traditional Vaagai Mara Chekku Churn -->
+        <div
+          class="process-card glass-card rounded-3xl overflow-hidden p-5 flex flex-col justify-between reveal group relative border border-brand-border/80 bg-white/90 shadow-lg">
+          <div>
+            <!-- Step Image with Smooth Zoom Effect -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 bg-brand-cream shadow-inner">
+              <img src="assets/images/process-step2.jpg" alt="Traditional Vaagai Mara Chekku wood churn cold pressing"
+                class="process-img w-full h-full object-cover transition-transform duration-700" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-deepforest/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity">
+              </div>
+              <!-- Floating Step Badge -->
+              <div
+                class="absolute top-3 left-3 w-9 h-9 rounded-xl bg-brand-forest text-brand-ivory font-serif text-sm font-bold flex items-center justify-center shadow-md ring-2 ring-brand-gold/60">
+                02
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 text-[10px] tracking-wider uppercase font-bold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-0.5 rounded-full">
+                Cold-Pressed
+              </span>
+            </div>
+
+            <!-- Step Header with SVG Icon -->
+            <div class="flex items-center gap-2 mb-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-800 flex-shrink-0">
+                <!-- Wood Mortar SVG -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 3h12l2 6H4z" />
+                  <path d="M4 9c0 7 3.5 11 8 11s8-4 8-11" />
+                  <path d="M12 9v6" />
+                </svg>
+              </div>
+              <h3
+                class="font-serif text-lg font-bold text-brand-deepforest group-hover:text-brand-forest transition-colors">
+                Vaagai Wood Churn</h3>
+            </div>
+
+            <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
+              Copra is crushed gently in ancient mortars carved from medicinal Vaagai (Siris) wood. Slow churn rotation
+              keeps oil temperature strictly below 35°C.
+            </p>
           </div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-2">Vaagai Wood Churn</h3>
-          <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Crushed gently in traditional wooden mortars carved from medicinal Vaagai (Siris) wood. Temperature never exceeds ambient room temperature.
-          </p>
+
+          <div
+            class="mt-4 pt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-brand-forest font-semibold">
+            <span>Room Temperature</span>
+            <span>Retains Lauric Acid</span>
+          </div>
         </div>
 
-        <div class="glass-card p-5 sm:p-6 rounded-3xl relative reveal">
-          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-brand-forest text-brand-ivory font-serif text-lg sm:text-xl font-bold flex items-center justify-center mb-4 sm:mb-5 shadow-md">
-            03
+        <!-- Step 03: Natural Settling & Gravity Filtration -->
+        <div
+          class="process-card glass-card rounded-3xl overflow-hidden p-5 flex flex-col justify-between reveal group relative border border-brand-border/80 bg-white/90 shadow-lg">
+          <div>
+            <!-- Step Image with Smooth Zoom Effect -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 bg-brand-cream shadow-inner">
+              <img src="assets/images/process-step3.jpg"
+                alt="Natural cotton cloth filtration and sedimentation of virgin coconut oil"
+                class="process-img w-full h-full object-cover transition-transform duration-700" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-deepforest/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity">
+              </div>
+              <!-- Floating Step Badge -->
+              <div
+                class="absolute top-3 left-3 w-9 h-9 rounded-xl bg-brand-forest text-brand-ivory font-serif text-sm font-bold flex items-center justify-center shadow-md ring-2 ring-brand-gold/60">
+                03
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 text-[10px] tracking-wider uppercase font-bold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-0.5 rounded-full">
+                48-Hour Rest
+              </span>
+            </div>
+
+            <!-- Step Header with SVG Icon -->
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-sky-100 flex items-center justify-center text-sky-800 flex-shrink-0">
+                <!-- Filter Droplet SVG -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                  <line x1="8" y1="14" x2="16" y2="14" />
+                </svg>
+              </div>
+              <h3
+                class="font-serif text-lg font-bold text-brand-deepforest group-hover:text-brand-forest transition-colors">
+                Natural Settling</h3>
+            </div>
+
+            <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
+              Zero chemical bleaching or chemical clay. Raw oil naturally settles in stainless decanters for 48 hours,
+              followed by pristine organic cotton mesh filtration.
+            </p>
           </div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-2">Sediment Settling</h3>
-          <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Zero chemical refining or bleaching. The raw oil is left to settle naturally in food-grade stainless tanks over 48 hours.
-          </p>
+
+          <div
+            class="mt-4 pt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-brand-forest font-semibold">
+            <span>Zero Chemicals</span>
+            <span>Natural Cotton Mesh</span>
+          </div>
         </div>
 
-        <div class="glass-card p-5 sm:p-6 rounded-3xl relative reveal">
-          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-brand-forest text-brand-ivory font-serif text-lg sm:text-xl font-bold flex items-center justify-center mb-4 sm:mb-5 shadow-md">
-            04
+        <!-- Step 04: Fresh Bottling & Hermetic Seal -->
+        <div
+          class="process-card glass-card rounded-3xl overflow-hidden p-5 flex flex-col justify-between reveal group relative border border-brand-border/80 bg-white/90 shadow-lg">
+          <div>
+            <!-- Step Image with Smooth Zoom Effect -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 bg-brand-cream shadow-inner">
+              <img src="assets/images/process-step4.jpg" alt="Artisan bottles filled with pure golden coconut oil"
+                class="process-img w-full h-full object-cover transition-transform duration-700" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-deepforest/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity">
+              </div>
+              <!-- Floating Step Badge -->
+              <div
+                class="absolute top-3 left-3 w-9 h-9 rounded-xl bg-brand-forest text-brand-ivory font-serif text-sm font-bold flex items-center justify-center shadow-md ring-2 ring-brand-gold/60">
+                04
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 text-[10px] tracking-wider uppercase font-bold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-0.5 rounded-full">
+                Hermetic Seal
+              </span>
+            </div>
+
+            <!-- Step Header with SVG Icon -->
+            <div class="flex items-center gap-2 mb-2">
+              <div
+                class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center text-brand-darkgold flex-shrink-0">
+                <!-- Premium Bottle Seal SVG -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <h3
+                class="font-serif text-lg font-bold text-brand-deepforest group-hover:text-brand-forest transition-colors">
+                Bottled Fresh</h3>
+            </div>
+
+            <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
+              Poured directly into food-grade, light-protected bottles and hermetically sealed to preserve the heavenly
+              tropical coconut aroma straight to your kitchen.
+            </p>
           </div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-2">Bottled Fresh</h3>
-          <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Poured into light-protected containers and sealed hermetically to lock in the heavenly natural aroma of virgin coconut straight to your kitchen.
-          </p>
+
+          <div
+            class="mt-4 pt-3 border-t border-brand-border/60 flex items-center justify-between text-[11px] text-brand-forest font-semibold">
+            <span>Direct Dispatch</span>
+            <span>Unmatched Aroma</span>
+          </div>
         </div>
 
       </div>
 
-      <!-- Test of Purity Callout -->
-      <div class="mt-10 sm:mt-16 glass-card p-6 sm:p-8 rounded-3xl border border-brand-gold/40 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 reveal">
-        <div class="text-3xl sm:text-4xl flex-shrink-0">❄️</div>
+      <!-- Test of Purity Callout with Crisp Snowflake & Thermometer SVG Icons -->
+      <div
+        class="mt-10 sm:mt-16 glass-card p-6 sm:p-8 rounded-3xl border border-brand-gold/40 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 reveal bg-white/95 shadow-xl">
+        <div
+          class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-brand-gold/15 flex items-center justify-center text-brand-forest flex-shrink-0 shadow-sm">
+          <!-- Pure Snowflake / Crystallization SVG -->
+          <svg class="w-7 h-7 text-brand-forest" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+            <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+            <polyline points="10 4 12 2 14 4" />
+            <polyline points="10 20 12 22 14 20" />
+            <polyline points="4 10 2 12 4 14" />
+            <polyline points="20 10 22 12 20 14" />
+          </svg>
+        </div>
         <div class="space-y-1">
-          <h4 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest">The True Test of Purity: Natural Solidification</h4>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">The Hallmark of
+              Authenticity</span>
+          </div>
+          <h4 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest">
+            The True Test of Purity: Natural Solidification Below 24°C
+          </h4>
           <p class="text-xs sm:text-sm text-brand-earth/85 font-light leading-relaxed">
-            Unadulterated coconut oil naturally freezes below 24°C into a silky white butter. Commercial adulterated oils with liquid paraffin won’t solidify. COCOmint solidifies proudly — simply place the bottle in lukewarm water to liquefy.
+            Unadulterated coconut oil naturally solidifies below 24°C into a silky, snow-white butter. Commercial
+            adulterated oils blended with liquid paraffin remain artificially liquid. COCOmint solidifies proudly —
+            simply place the bottle in lukewarm water for two minutes to liquefy.
           </p>
         </div>
       </div>
@@ -855,32 +1542,38 @@
   <!-- ================= LIFESTYLE PARALLAX BANNER ================= -->
   <section class="relative py-24 sm:py-36 overflow-hidden bg-brand-deepforest">
     <div class="absolute inset-0 z-0 opacity-40">
-      <img src="assets/images/lifestyle.jpg" alt="Artisanal coconut oil lifestyle" class="w-full h-full object-cover object-center" />
+      <img src="assets/images/lifestyle.jpg" alt="Artisanal coconut oil lifestyle"
+        class="w-full h-full object-cover object-center" />
     </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-brand-deepforest via-brand-deepforest/75 to-brand-deepforest"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-deepforest via-brand-deepforest/75 to-brand-deepforest">
+    </div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-brand-ivory space-y-4 sm:space-y-6">
-      <span class="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-gold font-bold">Nature’s Universal Elixir</span>
+      <span class="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-gold font-bold">Nature’s Universal
+        Elixir</span>
       <h2 class="font-serif text-2xl sm:text-4xl lg:text-5xl font-light leading-tight">
-        Bring Home the Living Purity of <br/>
+        Bring Home the Living Purity of <br />
         <em class="font-normal italic text-brand-gold">Pollachi's Golden Harvest.</em>
       </h2>
       <p class="text-xs sm:text-base text-brand-ivory/80 font-light max-w-xl mx-auto leading-relaxed">
         From ancient Ayurvedic oil pulling and deep hair conditioning to wholesome cooking in your kitchen.
       </p>
       <div class="pt-2 sm:pt-4">
-        <a href="#order-builder" class="btn-gold w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-xl text-xs uppercase tracking-wider font-bold shadow-2xl inline-flex items-center justify-center gap-2 text-center">
+        <a href="#order-builder"
+          class="btn-gold w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-xl text-xs uppercase tracking-wider font-bold shadow-2xl inline-flex items-center justify-center gap-2 text-center">
           <span>Order Fresh Batch Today</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= MULTI-USE HEALTH & BEAUTY BENEFITS ================= -->
+  <!-- ================= MULTI-USE HEALTH & BEAUTY BENEFITS (WITH EXQUISITE SVG ICONS) ================= -->
   <section id="benefits" class="py-16 sm:py-24 bg-brand-cream relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal">
         <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Everyday Wellness</span>
         <div class="w-12 h-0.5 bg-brand-gold mx-auto my-3"></div>
@@ -893,36 +1586,77 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-        
-        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal">
-          <div class="text-3xl mb-3 sm:mb-4">🍳</div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Nutritious Cooking</h3>
+
+        <!-- Benefit 1: Nutritious Cooking with Pan SVG -->
+        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal group hover:border-brand-gold/70 transition-all">
+          <div
+            class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6 text-amber-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12h12a4 4 0 0 1 4 4v1H2v-5z" />
+              <path d="M18 14l4-4" />
+              <circle cx="8" cy="12" r="1" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Nutritious Cooking
+          </h3>
           <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            High smoke point with pure MCTs. Imparts authentic coastal aroma to curries, dosa, and South Indian delicacies.
+            High smoke point with pure MCTs. Imparts authentic coastal aroma to curries, dosa, and traditional South
+            Indian delicacies.
           </p>
         </div>
 
-        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal">
-          <div class="text-3xl mb-3 sm:mb-4">✨</div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Lustrous Hair Care</h3>
+        <!-- Benefit 2: Lustrous Hair Care with Beauty Sparkle SVG -->
+        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal group hover:border-brand-gold/70 transition-all">
+          <div
+            class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6 text-emerald-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Lustrous Hair Care
+          </h3>
           <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Lauric acid penetrates deeply past the hair shaft, reducing protein loss, soothing dry scalps, and promoting thicker root growth.
+            Lauric acid penetrates deeply past the hair shaft, reducing protein loss, soothing dry scalps, and promoting
+            thicker root growth.
           </p>
         </div>
 
-        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal">
-          <div class="text-3xl mb-3 sm:mb-4">👶</div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Baby &amp; Skin Care</h3>
+        <!-- Benefit 3: Baby & Sensitive Skin with Gentle Heart SVG -->
+        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal group hover:border-brand-gold/70 transition-all">
+          <div
+            class="w-12 h-12 rounded-2xl bg-rose-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6 text-rose-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Baby &amp; Skin Care
+          </h3>
           <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Hypoallergenic and ultra-mild. Perfect for infant daily body massage, soothing skin, and non-toxic skin moisturizing.
+            Hypoallergenic and ultra-mild. Perfect for infant daily body massage, soothing tender skin, and non-toxic
+            moisture retention.
           </p>
         </div>
 
-        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal">
-          <div class="text-3xl mb-3 sm:mb-4">🌿</div>
-          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Ayurvedic Oil Pulling</h3>
+        <!-- Benefit 4: Ayurvedic Oil Pulling with Lotus / Botanical SVG -->
+        <div class="glass-card p-5 sm:p-6 rounded-3xl reveal group hover:border-brand-gold/70 transition-all">
+          <div
+            class="w-12 h-12 rounded-2xl bg-teal-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6 text-teal-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21a9 9 0 0 0 9-9c0-4-4.5-8-9-10-4.5 2-9 6-9 10a9 9 0 0 0 9 9z" />
+              <path d="M12 17a4 4 0 0 0 4-4c0-2-2-4-4-5-2 1-4 3-4 5a4 4 0 0 0 4 4z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg sm:text-xl font-bold text-brand-deepforest mb-1.5 sm:mb-2">Ayurvedic Oil Pulling
+          </h3>
           <p class="text-xs text-brand-earth/80 font-light leading-relaxed">
-            Swish 1 tablespoon each morning for 10 minutes to eliminate oral bacteria, strengthen gums, and naturally whiten teeth.
+            Swish 1 tablespoon each morning for 10 minutes to eliminate oral bacteria, strengthen gums, and naturally
+            whiten teeth.
           </p>
         </div>
 
@@ -934,7 +1668,7 @@
   <!-- ================= TESTIMONIALS ================= -->
   <section id="testimonials" class="py-16 sm:py-24 bg-brand-ivory relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal">
         <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Customer Love</span>
         <div class="w-12 h-0.5 bg-brand-gold mx-auto my-3"></div>
@@ -944,14 +1678,37 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-        
+
         <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-4 reveal">
-          <div class="text-amber-500 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="flex items-center gap-0.5 text-amber-500">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
           <p class="font-serif text-sm sm:text-base italic text-brand-deepforest leading-relaxed">
-            "The moment you open the lid, you know this is real Pollachi oil. It smells like freshly grated coconut, not that burnt chemical smell of store brands."
+            "The moment you open the lid, you know this is real Pollachi oil. It smells like freshly grated coconut, not
+            that burnt chemical smell of store brands."
           </p>
           <div class="flex items-center gap-3 pt-3 border-t border-brand-border">
-            <div class="w-9 h-9 rounded-full bg-brand-forest text-brand-ivory font-bold flex items-center justify-center text-xs">
+            <div
+              class="w-9 h-9 rounded-full bg-brand-forest text-brand-ivory font-bold flex items-center justify-center text-xs">
               S
             </div>
             <div>
@@ -962,12 +1719,35 @@
         </div>
 
         <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-4 reveal border-2 border-brand-gold/40">
-          <div class="text-amber-500 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="flex items-center gap-0.5 text-amber-500">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
           <p class="font-serif text-sm sm:text-base italic text-brand-deepforest leading-relaxed">
-            "We ordered the Grand Family Pack for our home. My grandmother inspected the clarity and solidification and gave her 100% seal of approval!"
+            "We ordered the Grand Family Pack for our home. My grandmother inspected the clarity and solidification and
+            gave her 100% seal of approval!"
           </p>
           <div class="flex items-center gap-3 pt-3 border-t border-brand-border">
-            <div class="w-9 h-9 rounded-full bg-brand-gold text-brand-deepforest font-bold flex items-center justify-center text-xs">
+            <div
+              class="w-9 h-9 rounded-full bg-brand-gold text-brand-deepforest font-bold flex items-center justify-center text-xs">
               K
             </div>
             <div>
@@ -978,12 +1758,35 @@
         </div>
 
         <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-4 reveal">
-          <div class="text-amber-500 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="flex items-center gap-0.5 text-amber-500">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
           <p class="font-serif text-sm sm:text-base italic text-brand-deepforest leading-relaxed">
-            "I use it for my 6-month-old baby’s evening massage and for my own hair. So gentle, completely non-sticky, and feels like pure luxury on skin."
+            "I use it for my 6-month-old baby’s evening massage and for my own hair. So gentle, completely non-sticky,
+            and feels like pure luxury on skin."
           </p>
           <div class="flex items-center gap-3 pt-3 border-t border-brand-border">
-            <div class="w-9 h-9 rounded-full bg-brand-forest text-brand-ivory font-bold flex items-center justify-center text-xs">
+            <div
+              class="w-9 h-9 rounded-full bg-brand-forest text-brand-ivory font-bold flex items-center justify-center text-xs">
               P
             </div>
             <div>
@@ -1001,69 +1804,89 @@
   <!-- ================= INTERACTIVE WHATSAPP ORDER BUILDER (MOBILE FRIENDLY) ================= -->
   <section id="order-builder" class="py-16 sm:py-24 bg-brand-cream relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="glass-card rounded-3xl p-6 sm:p-12 shadow-2xl border-2 border-brand-gold/60 relative overflow-hidden bg-brand-ivory reveal">
-        <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-brand-gold/20 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div class="text-center max-w-xl mx-auto mb-6 sm:mb-8">
-          <span class="text-[11px] sm:text-xs uppercase tracking-widest font-bold text-brand-forest">Direct WhatsApp Checkout</span>
-          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-brand-deepforest mt-1.5 sm:mt-2">
-            Build Your Custom Order
+      <div
+        class="glass-card rounded-3xl p-6 sm:p-12 shadow-2xl border-2 border-brand-gold/60 relative overflow-hidden bg-brand-ivory reveal">
+
+        <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Instant Farm Dispatch</span>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-brand-deepforest mt-1.5">
+            Order Directly via <span class="text-emerald-700">WhatsApp</span>
           </h2>
-          <p class="text-xs sm:text-sm text-brand-earth/80 mt-1.5 font-light">
-            Select your bottle size, tell us your city, and tap to open pre-filled WhatsApp chat.
+          <p class="text-xs sm:text-sm text-brand-earth/80 mt-2 font-light">
+            Select your preferred bottle size below. A formatted message will open directly in WhatsApp for personal
+            confirmation.
           </p>
         </div>
 
-        <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4 sm:space-y-6">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            
-            <div>
-              <label for="productSelect" class="block text-xs uppercase font-bold text-brand-deepforest tracking-wider mb-1.5">Select Bottle / Size</label>
-              <select id="productSelect" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 sm:py-3.5 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold shadow-sm">
-                <option value="COCOmint 1 Litre Sovereign (₹520)">COCOmint 1 Litre Sovereign — ₹520</option>
-                <option value="COCOmint 500ml Classic (₹275)">COCOmint 500ml Classic — ₹275</option>
-                <option value="COCOmint Grand Family Pack (₹1450)">COCOmint Grand Family Pack — ₹1,450</option>
-                <option value="Custom Bulk Quantity">Custom / Bulk Farm Order</option>
-              </select>
-            </div>
+        <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4 sm:space-y-6 max-w-lg mx-auto">
 
-            <div>
-              <label for="quantitySelect" class="block text-xs uppercase font-bold text-brand-deepforest tracking-wider mb-1.5">Quantity</label>
-              <select id="quantitySelect" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 sm:py-3.5 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold shadow-sm">
-                <option value="1 Unit">1 Bottle</option>
-                <option value="2 Units">2 Bottles</option>
-                <option value="3 Units">3 Bottles</option>
-                <option value="5+ Units (Bulk)">5+ Bottles</option>
-              </select>
-            </div>
-
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-brand-deepforest mb-2">Select Product
+              Size</label>
+            <select id="productSelect"
+              class="w-full px-4 py-3 rounded-xl bg-white border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none shadow-sm">
+              <option value="COCOmint 1 Litre Royal (₹520)">COCOmint 1 Litre Royal Bottle — ₹520 (Most Popular)</option>
+              <option value="COCOmint 500ml Pure Oil (₹275)">COCOmint 500ml Bottle — ₹275</option>
+              <option value="COCOmint Grand Family Pack 3.5L (₹1450)">COCOmint Grand Family Pack (3.5L) — ₹1,450 (Best
+                Value)</option>
+            </select>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label for="custName" class="block text-xs uppercase font-bold text-brand-deepforest tracking-wider mb-1.5">Your Name</label>
-              <input type="text" id="custName" placeholder="e.g. Ramesh Kumar" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 sm:py-3.5 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold shadow-sm" required />
+              <label
+                class="block text-xs font-bold uppercase tracking-wider text-brand-deepforest mb-2">Quantity</label>
+              <select id="quantitySelect"
+                class="w-full px-4 py-3 rounded-xl bg-white border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none shadow-sm">
+                <option value="1 Bottle / Pack">1 Bottle / Pack</option>
+                <option value="2 Bottles / Packs">2 Bottles / Packs</option>
+                <option value="3 Bottles / Packs">3 Bottles / Packs</option>
+                <option value="5+ (Wholesale Enquiry)">5+ (Wholesale)</option>
+              </select>
             </div>
-
             <div>
-              <label for="custCity" class="block text-xs uppercase font-bold text-brand-deepforest tracking-wider mb-1.5">Delivery City / Pin Code</label>
-              <input type="text" id="custCity" placeholder="e.g. Chennai, 600028" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 sm:py-3.5 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold shadow-sm" required />
+              <label class="block text-xs font-bold uppercase tracking-wider text-brand-deepforest mb-2">Your
+                Name</label>
+              <input type="text" id="custName" required placeholder="e.g. Ananya Sharma"
+                class="w-full px-4 py-3 rounded-xl bg-white border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none shadow-sm" />
             </div>
           </div>
 
           <div>
-            <label for="custNotes" class="block text-xs uppercase font-bold text-brand-deepforest tracking-wider mb-1.5">Special Notes / Questions (Optional)</label>
-            <input type="text" id="custNotes" placeholder="e.g. Please confirm delivery date" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 sm:py-3.5 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold shadow-sm" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-brand-deepforest mb-2">Delivery City /
+              Town &amp; Pincode</label>
+            <input type="text" id="custCity" required placeholder="e.g. Coimbatore - 641018"
+              class="w-full px-4 py-3 rounded-xl bg-white border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none shadow-sm" />
           </div>
 
-          <div class="pt-2 text-center">
-            <button type="submit" class="w-full sm:w-auto btn-gold px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl text-xs uppercase tracking-wider font-bold inline-flex items-center justify-center gap-3 shadow-xl">
-              <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              <span>Send Order on WhatsApp</span>
-            </button>
-            <p class="text-[11px] text-brand-earth/60 mt-3">🔒 No payment required now. We calculate local shipping &amp; confirm UPI details directly with you.</p>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-brand-deepforest mb-2">Special Delivery
+              Notes (Optional)</label>
+            <input type="text" id="custNotes" placeholder="e.g. Call before delivery, gift wrap, etc."
+              class="w-full px-4 py-3 rounded-xl bg-white border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none shadow-sm" />
           </div>
+
+          <div class="pt-2 sm:pt-4">
+            <button type="submit"
+              class="w-full py-4 rounded-xl font-bold uppercase tracking-wider text-xs sm:text-sm text-white bg-emerald-700 hover:bg-emerald-800 transition-all shadow-xl flex items-center justify-center gap-2.5 active:scale-98">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12.031 2C6.5 2 2 6.5 2 12.031c0 1.953.563 3.781 1.547 5.344L2.094 22l4.766-1.406A10.016 10.016 0 0 0 12.031 22C17.562 22 22 17.531 22 12.031 22 6.5 17.562 2 12.031 2zm0 18.281a8.236 8.236 0 0 1-4.25-1.172l-.312-.187-2.828.844.844-2.75-.203-.328A8.256 8.256 0 0 1 3.75 12.03c0-4.562 3.719-8.281 8.281-8.281 4.563 0 8.281 3.719 8.281 8.281 0 4.563-3.718 8.281-8.281 8.281zm4.531-6.187c-.25-.125-1.469-.719-1.688-.813-.234-.093-.39-.14-.562.125-.172.266-.672.813-.828.984-.156.172-.313.188-.563.063-.25-.125-1.047-.39-2-1.235-.734-.656-1.234-1.468-1.375-1.718-.14-.25-.016-.39.11-.516.109-.109.25-.281.374-.422.126-.14.172-.25.25-.406.079-.172.047-.328-.015-.453-.063-.125-.563-1.359-.766-1.859-.203-.5-.406-.438-.562-.438h-.485c-.171 0-.453.063-.687.313-.235.25-.891.875-.891 2.125s.906 2.453 1.031 2.625c.125.172 1.781 2.719 4.312 3.812.609.266 1.078.422 1.453.547.609.188 1.156.156 1.594.094.484-.078 1.469-.609 1.672-1.203.203-.594.203-1.094.14-1.203-.062-.094-.218-.156-.468-.281z" />
+              </svg>
+              <span>Send Order via WhatsApp</span>
+            </button>
+          </div>
+
+          <div class="flex items-center justify-center gap-1.5 text-[11px] text-brand-earth/60 mt-3">
+            <svg class="w-3.5 h-3.5 text-brand-forest/60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            <span>No advance payment needed on website. Pay after personal order confirmation.</span>
+          </div>
+
         </form>
 
       </div>
@@ -1074,8 +1897,8 @@
   <!-- ================= ACCORDION FAQ ================= -->
   <section id="faq" class="py-16 sm:py-24 bg-brand-ivory relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 reveal">
+
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal">
         <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Purity Answers</span>
         <div class="w-12 h-0.5 bg-brand-gold mx-auto my-3"></div>
         <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-deepforest">
@@ -1084,54 +1907,77 @@
       </div>
 
       <div class="space-y-3 sm:space-y-4 reveal">
-        
+
         <div class="faq-item glass-card rounded-2xl overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
+          <button
+            class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
             <span class="pr-3">What makes Pollachi coconut oil so famous across India?</span>
-            <span class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
+            <span
+              class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
           </button>
-          <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
-            Pollachi enjoys high annual rainfall, deep red loamy soil, and year-round tropical sunshine. This natural ecology yields copra with higher natural oil density, rich lauric acid, and an aromatic sweetness unmatched by any other region.
+          <div
+            class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
+            Pollachi enjoys high annual rainfall, deep red loamy soil, and year-round tropical sunshine. This natural
+            ecology yields copra with higher natural oil density, rich lauric acid, and an aromatic sweetness unmatched
+            by any other region.
           </div>
         </div>
 
         <div class="faq-item glass-card rounded-2xl overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
+          <button
+            class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
             <span class="pr-3">Is COCOmint oil unrefined and Mara Chekku pressed?</span>
-            <span class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
+            <span
+              class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
           </button>
-          <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
-            Yes, 100%! We crush sun-dried copra in traditional wooden churns (Mara Chekku) without any chemical solvents, heating, bleaching, or deodorizing. The oil retains its natural Vitamin E, antioxidants, and pure raw aroma.
+          <div
+            class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
+            Yes, 100%! We crush sun-dried copra in traditional wooden churns (Mara Chekku) without any chemical
+            solvents, heating, bleaching, or deodorizing. The oil retains its natural Vitamin E, antioxidants, and pure
+            raw aroma.
           </div>
         </div>
 
         <div class="faq-item glass-card rounded-2xl overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
+          <button
+            class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
             <span class="pr-3">Can I cook with this oil and also apply it to hair and skin?</span>
-            <span class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
+            <span
+              class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
           </button>
-          <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
-            Absolutely. Because our oil is completely pure and edible grade, it is equally nutritious for cooking as it is therapeutic for hair conditioning, oil pulling, and infant body massage.
+          <div
+            class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
+            Absolutely. Because our oil is completely pure and edible grade, it is equally nutritious for cooking as it
+            is therapeutic for hair conditioning, oil pulling, and infant body massage.
           </div>
         </div>
 
         <div class="faq-item glass-card rounded-2xl overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
+          <button
+            class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
             <span class="pr-3">Why did my coconut oil turn into a white solid?</span>
-            <span class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
+            <span
+              class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
           </button>
-          <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
-            Pure natural coconut oil freezes at 24°C (75°F). This is the hallmark proof of unadulterated oil! Commercial adulterated oils with liquid paraffin won’t solidify. Simply keep the bottle in a bowl of warm water for a few minutes.
+          <div
+            class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
+            Pure natural coconut oil freezes at 24°C (75°F). This is the hallmark proof of unadulterated oil! Commercial
+            adulterated oils with liquid paraffin won’t solidify. Simply keep the bottle in a bowl of warm water for a
+            few minutes.
           </div>
         </div>
 
         <div class="faq-item glass-card rounded-2xl overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
+          <button
+            class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-serif text-base sm:text-lg font-bold text-brand-deepforest focus:outline-none">
             <span class="pr-3">How fast do you deliver outside Pollachi?</span>
-            <span class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
+            <span
+              class="faq-icon text-xl text-brand-gold transition-transform duration-300 font-sans flex-shrink-0">+</span>
           </button>
-          <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
-            We dispatch orders via express courier directly from Pollachi within 24 hours of receiving your WhatsApp confirmation. Deliveries across South India arrive in 1–2 days; all other regions within 3–4 days.
+          <div
+            class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6 text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed border-t border-brand-border/40 pt-3 sm:pt-4">
+            We dispatch orders via express courier directly from Pollachi within 24 hours of receiving your WhatsApp
+            confirmation. Deliveries across South India arrive in 1–2 days; all other regions within 3–4 days.
           </div>
         </div>
 
@@ -1143,30 +1989,48 @@
   <!-- ================= CONTACT & LOCATION ================= -->
   <section id="contact" class="py-16 sm:py-24 bg-brand-cream relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
-        
+
         <div class="lg:col-span-5 space-y-4 sm:space-y-6 reveal">
           <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-forest">Direct Contact</span>
           <h2 class="font-serif text-2xl sm:text-4xl font-bold text-brand-deepforest">
-            We Would Love to <br/>
+            We Would Love to <br />
             <span class="italic font-normal text-brand-forest">Hear from You.</span>
           </h2>
           <p class="text-xs sm:text-sm text-brand-earth/80 font-light leading-relaxed">
-            Have questions about our pressing season, wholesale orders, or personal doorstep delivery? Connect directly with our team in Pollachi.
+            Have questions about our pressing season, wholesale orders, or personal doorstep delivery? Connect directly
+            with our team in Pollachi.
           </p>
 
           <div class="space-y-3 sm:space-y-4 pt-2 sm:pt-4">
             <div class="flex items-center gap-3.5">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">📍</div>
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">
+                <!-- Location Pin SVG -->
+                <svg class="w-5 h-5 text-brand-darkgold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
               <div class="min-w-0">
                 <p class="text-xs font-bold text-brand-deepforest">Mill &amp; Grove Address</p>
-                <p class="text-xs text-brand-earth/70">Pollachi Coconut Heartland, Coimbatore District, Tamil Nadu — 642001</p>
+                <p class="text-xs text-brand-earth/70">Pollachi Coconut Heartland, Coimbatore District, Tamil Nadu —
+                  642001</p>
               </div>
             </div>
 
             <div class="flex items-center gap-3.5">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">📞</div>
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">
+                <!-- Phone SVG -->
+                <svg class="w-5 h-5 text-brand-darkgold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
               <div class="min-w-0">
                 <p class="text-xs font-bold text-brand-deepforest">WhatsApp &amp; Phone</p>
                 <p class="text-xs text-brand-earth/70">+91 [YOUR NUMBER] (Mon–Sat, 8am–8pm)</p>
@@ -1174,7 +2038,15 @@
             </div>
 
             <div class="flex items-center gap-3.5">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">✉️</div>
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-darkgold font-bold flex-shrink-0">
+                <!-- Mail SVG -->
+                <svg class="w-5 h-5 text-brand-darkgold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
               <div class="min-w-0">
                 <p class="text-xs font-bold text-brand-deepforest">Email Inquiries</p>
                 <p class="text-xs text-brand-earth/70">hello@cocomint.in / orders@cocomint.in</p>
@@ -1183,23 +2055,37 @@
           </div>
         </div>
 
-        <div class="lg:col-span-7 glass-card p-6 sm:p-10 rounded-3xl border border-brand-gold/40 shadow-xl reveal">
-          <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest mb-1.5">Send Direct Message</h3>
-          <p class="text-xs text-brand-earth/70 mb-5">We respond promptly via WhatsApp or phone call.</p>
+        <div class="lg:col-span-7 reveal">
+          <div class="glass-card p-6 sm:p-8 rounded-3xl border border-brand-border bg-white shadow-xl">
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-deepforest mb-2">Send a Quick Message</h3>
+            <p class="text-xs text-brand-earth/70 mb-5">Direct inquiry routed to our WhatsApp desk.</p>
 
-          <div class="space-y-3 sm:space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <input type="text" id="contactName" placeholder="Your Full Name" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold" />
-              <input type="tel" id="contactPhone" placeholder="Mobile / WhatsApp Number" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold" />
-            </div>
-            <textarea id="contactMsg" rows="3" placeholder="How can we help? (e.g. Inquiring about shipping to Mumbai, monthly subscription)" class="w-full bg-white border border-brand-border rounded-xl px-4 py-3 text-base text-brand-deepforest focus:outline-none focus:border-brand-gold"></textarea>
-            
-            <button onclick="sendContactWa()" class="btn-forest w-full py-3.5 sm:py-4 rounded-xl text-xs uppercase tracking-wider font-bold inline-flex items-center justify-center gap-2">
-              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              <span>Submit via WhatsApp</span>
-            </button>
+            <form onsubmit="event.preventDefault(); sendContactWa();" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-brand-deepforest mb-1.5">Your Name</label>
+                <input type="text" id="contactName" required placeholder="Hariprasath"
+                  class="w-full px-4 py-2.5 rounded-xl bg-brand-cream/60 border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-brand-deepforest mb-1.5">Phone Number</label>
+                <input type="tel" id="contactPhone" placeholder="+91 98765 43210"
+                  class="w-full px-4 py-2.5 rounded-xl bg-brand-cream/60 border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-brand-deepforest mb-1.5">Your Message</label>
+                <textarea id="contactMsg" rows="3"
+                  placeholder="Ask about delivery, pricing, or custom batch pressing..."
+                  class="w-full px-4 py-2.5 rounded-xl bg-brand-cream/60 border border-brand-border text-sm text-brand-deepforest focus:ring-2 focus:ring-brand-gold focus:outline-none"></textarea>
+              </div>
+
+              <button type="submit"
+                class="btn-gold w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-center">
+                Send Direct Message
+              </button>
+            </form>
           </div>
-
         </div>
 
       </div>
@@ -1207,40 +2093,66 @@
     </div>
   </section>
 
-  <!-- ================= LUXURY FOOTER (WITH CLEAN BRAND LOGO) ================= -->
+  <!-- ================= LUXURY FOOTER (WITH CLEAN BRAND LOGO & CRISP SVG BADGES) ================= -->
   <footer class="bg-brand-deepforest text-brand-ivory pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-brand-gold/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-white/10">
-        
-        <!-- Brand Summary -->
-        <div class="lg:col-span-2 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-white/10">
+
+        <div class="lg:col-span-5 space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-brand-gold to-brand-forest flex-shrink-0 shadow-md">
-              <img src="assets/images/logo.png" alt="COCOmint Logo" class="w-full h-full rounded-full bg-white object-contain" />
+            <div
+              class="w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-brand-gold via-brand-forest to-brand-gold shadow-md flex-shrink-0">
+              <img src="assets/images/logo.png" alt="COCOmint Brand Emblem"
+                class="w-full h-full object-contain rounded-full bg-white shadow-inner" />
             </div>
             <div>
-              <span class="font-serif text-2xl font-bold tracking-tight text-brand-ivory">COCO<span class="text-brand-gold">mint</span></span>
-              <span class="block text-[10px] tracking-widest uppercase font-semibold text-brand-gold">Natural Oils &bull; Pollachi</span>
+              <span class="font-serif text-2xl font-bold tracking-tight text-brand-ivory">
+                COCO<span class="text-brand-gold">mint</span>
+              </span>
+              <p class="text-[10px] uppercase tracking-widest text-brand-gold font-bold">Natural Oils &bull; Pollachi
+              </p>
             </div>
           </div>
-          <p class="text-xs text-brand-ivory/70 leading-relaxed font-light max-w-sm">
-            Dedicated to reviving the authentic, unadulterated heritage of South Indian wood-pressed coconut oil. Handcrafted with reverence for soil, farmers, and health.
+
+          <p class="text-xs text-brand-ivory/70 font-light leading-relaxed max-w-sm">
+            Preserving South India’s generational cold-pressed oil traditions. Unrefined, unheated, and single-origin
+            straight from the sacred coconut soils of Pollachi, Tamil Nadu.
           </p>
-          <div class="flex flex-wrap items-center gap-2 sm:gap-3 pt-1 text-[11px] sm:text-xs text-brand-gold">
-            <span>🌿 Single Origin</span>
+
+          <div class="flex items-center gap-4 text-xs text-brand-gold/90 pt-1">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+              </svg>
+              Single Origin
+            </span>
             <span>&bull;</span>
-            <span>🪵 Mara Chekku</span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l2 6H4z" />
+                <path d="M4 9c0 7 3.5 11 8 11s8-4 8-11" />
+                <path d="M12 9v6" />
+              </svg>
+              Mara Chekku
+            </span>
             <span>&bull;</span>
-            <span>✨ Pure Virgin</span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+              </svg>
+              Pure Virgin
+            </span>
           </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="space-y-2.5 sm:space-y-3">
-          <h4 class="font-serif text-sm font-bold tracking-wider uppercase text-brand-gold">Navigate</h4>
-          <ul class="space-y-2 text-xs font-light text-brand-ivory/80">
-            <li><a href="#home" class="hover:text-brand-gold transition-colors">Home</a></li>
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs uppercase tracking-widest font-bold text-brand-gold">Explore Pages</h4>
+          <ul class="space-y-2 text-xs text-brand-ivory/80">
+            <li><a href="#home" class="hover:text-brand-gold transition-colors">Home Showcase</a></li>
             <li><a href="#our-story" class="hover:text-brand-gold transition-colors">Our Pollachi Story</a></li>
             <li><a href="#products" class="hover:text-brand-gold transition-colors">Products &amp; Sizes</a></li>
             <li><a href="#process" class="hover:text-brand-gold transition-colors">Wood-Press Method</a></li>
@@ -1248,71 +2160,67 @@
           </ul>
         </div>
 
-        <!-- Products -->
-        <div class="space-y-2.5 sm:space-y-3">
-          <h4 class="font-serif text-sm font-bold tracking-wider uppercase text-brand-gold">Collection</h4>
-          <ul class="space-y-2 text-xs font-light text-brand-ivory/80">
-            <li><a href="#products" class="hover:text-brand-gold transition-colors">500ml Everyday Glass Bottle</a></li>
-            <li><a href="#products" class="hover:text-brand-gold transition-colors">1 Litre Sovereign Bottle</a></li>
-            <li><a href="#products" class="hover:text-brand-gold transition-colors">Grand Family Pack (3L+500ml)</a></li>
-            <li><a href="#products" class="hover:text-brand-gold transition-colors">Artisanal Gifting Sets</a></li>
-            <li><a href="#order-builder" class="hover:text-brand-gold transition-colors">Custom Bulk Supply</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="space-y-2.5 sm:space-y-3">
-          <h4 class="font-serif text-sm font-bold tracking-wider uppercase text-brand-gold">Get in Touch</h4>
-          <ul class="space-y-2 text-xs font-light text-brand-ivory/80">
-            <li>Pollachi, Coimbatore, Tamil Nadu</li>
-            <li>WhatsApp: +91 [YOUR NUMBER]</li>
-            <li>Email: hello@cocomint.in</li>
-            <li>Instagram: @cocomint_oils</li>
-          </ul>
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-xs uppercase tracking-widest font-bold text-brand-gold">WhatsApp Customer Care</h4>
+          <p class="text-xs text-brand-ivory/70 leading-relaxed">
+            Need custom volume pressing or want to check batch dispatch status?
+          </p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20COCOmint%2C%20I%20have%20an%20enquiry" target="_blank"
+            class="btn-gold inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs uppercase font-bold text-center">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12.031 2C6.5 2 2 6.5 2 12.031c0 1.953.563 3.781 1.547 5.344L2.094 22l4.766-1.406A10.016 10.016 0 0 0 12.031 22C17.562 22 22 17.531 22 12.031 22 6.5 17.562 2 12.031 2zm0 18.281a8.236 8.236 0 0 1-4.25-1.172l-.312-.187-2.828.844.844-2.75-.203-.328A8.256 8.256 0 0 1 3.75 12.03c0-4.562 3.719-8.281 8.281-8.281 4.563 0 8.281 3.719 8.281 8.281 0 4.563-3.718 8.281-8.281 8.281zm4.531-6.187c-.25-.125-1.469-.719-1.688-.813-.234-.093-.39-.14-.562.125-.172.266-.672.813-.828.984-.156.172-.313.188-.563.063-.25-.125-1.047-.39-2-1.235-.734-.656-1.234-1.468-1.375-1.718-.14-.25-.016-.39.11-.516.109-.109.25-.281.374-.422.126-.14.172-.25.25-.406.079-.172.047-.328-.015-.453-.063-.125-.563-1.359-.766-1.859-.203-.5-.406-.438-.562-.438h-.485c-.171 0-.453.063-.687.313-.235.25-.891.875-.891 2.125s.906 2.453 1.031 2.625c.125.172 1.781 2.719 4.312 3.812.609.266 1.078.422 1.453.547.609.188 1.156.156 1.594.094.484-.078 1.469-.609 1.672-1.203.203-.594.203-1.094.14-1.203-.062-.094-.218-.156-.468-.281z" />
+            </svg>
+            <span>Chat with Us</span>
+          </a>
         </div>
 
       </div>
 
-      <!-- Copyright Bar -->
-      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] sm:text-xs text-brand-ivory/50 font-light gap-3 text-center sm:text-left">
-        <p>&copy; 2026 COCOmint Natural Oils. All rights reserved. Made with love from Pollachi.</p>
-        <p>
-          <a href="#home" class="hover:text-brand-ivory transition-colors">Back to top ↑</a>
-        </p>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-brand-ivory/60 gap-3">
+        <p>&copy; 2026 COCOmint Natural Oils. Handcrafted with pride in Pollachi, Tamil Nadu.</p>
+        <p>100% Mara Chekku Pure Virgin Coconut Oil</p>
       </div>
-
     </div>
   </footer>
 
   <!-- ================= FLOATING WHATSAPP BUTTON (MOBILE OPTIMIZED) ================= -->
-  <div class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3">
-    <div class="hidden md:flex items-center bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg border border-emerald-200 text-xs font-semibold text-emerald-800 animate-bounce">
-      <span>Chat with Us 👋</span>
-    </div>
-    <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20COCOmint!%20I%20would%20like%20to%20order%20pure%20coconut%20oil." target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" class="w-13 h-13 sm:w-14 sm:h-14 p-3 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-transform duration-300 animate-wa-ripple">
-      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-  </div>
+  <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20COCOmint%2C%20I%20would%20like%20to%20order%20pure%20coconut%20oil"
+    target="_blank"
+    class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-2xl flex items-center gap-2.5 animate-wa-ripple transition-transform hover:scale-105 active:scale-95 group focus:outline-none">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path
+        d="M12.031 2C6.5 2 2 6.5 2 12.031c0 1.953.563 3.781 1.547 5.344L2.094 22l4.766-1.406A10.016 10.016 0 0 0 12.031 22C17.562 22 22 17.531 22 12.031 22 6.5 17.562 2 12.031 2zm0 18.281a8.236 8.236 0 0 1-4.25-1.172l-.312-.187-2.828.844.844-2.75-.203-.328A8.256 8.256 0 0 1 3.75 12.03c0-4.562 3.719-8.281 8.281-8.281 4.563 0 8.281 3.719 8.281 8.281 0 4.563-3.718 8.281-8.281 8.281zm4.531-6.187c-.25-.125-1.469-.719-1.688-.813-.234-.093-.39-.14-.562.125-.172.266-.672.813-.828.984-.156.172-.313.188-.563.063-.25-.125-1.047-.39-2-1.235-.734-.656-1.234-1.468-1.375-1.718-.14-.25-.016-.39.11-.516.109-.109.25-.281.374-.422.126-.14.172-.25.25-.406.079-.172.047-.328-.015-.453-.063-.125-.563-1.359-.766-1.859-.203-.5-.406-.438-.562-.438h-.485c-.171 0-.453.063-.687.313-.235.25-.891.875-.891 2.125s.906 2.453 1.031 2.625c.125.172 1.781 2.719 4.312 3.812.609.266 1.078.422 1.453.547.609.188 1.156.156 1.594.094.484-.078 1.469-.609 1.672-1.203.203-.594.203-1.094.14-1.203-.062-.094-.218-.156-.468-.281z" />
+    </svg>
+    <span class="hidden sm:inline text-xs font-bold tracking-wider uppercase">WhatsApp Order</span>
+  </a>
 
   <!-- ================= PRODUCT DETAILS QUICK VIEW MODAL (MOBILE FRIENDLY) ================= -->
-  <div id="productModal" class="fixed inset-0 z-50 hidden bg-brand-deepforest/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
-    <div class="glass-card bg-brand-cream max-w-2xl w-full rounded-3xl p-5 sm:p-8 relative shadow-2xl border-2 border-brand-gold/60 max-h-[92vh] overflow-y-auto">
-      
-      <button onclick="closeModal()" aria-label="Close modal" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-9 h-9 rounded-full bg-brand-sand flex items-center justify-center text-brand-deepforest hover:bg-brand-border active:scale-95 transition-all text-sm font-bold z-10">
-        ✕
+  <div id="productModal"
+    class="fixed inset-0 z-50 bg-black/60 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border-2 border-brand-gold/40 max-h-[90vh] overflow-y-auto">
+      <!-- Clean SVG Close Button -->
+      <button onclick="closeModal()"
+        class="absolute top-4 right-4 w-9 h-9 rounded-full bg-brand-sand/60 hover:bg-brand-sand flex items-center justify-center text-brand-deepforest transition-colors"
+        aria-label="Close Details">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
 
-      <div id="modalContent" class="space-y-4 sm:space-y-6">
+      <div id="modalContent">
         <!-- Injected via JavaScript -->
       </div>
-
     </div>
   </div>
 
   <!-- ================= CLIENT JAVASCRIPT ================= -->
   <script>
-    // Configuration
-    const WHATSAPP_NUMBER = '91XXXXXXXXXX'; // Replace with real phone: e.g. '919876543210'
+    // WhatsApp Phone Config
+    const WHATSAPP_NUMBER = '91XXXXXXXXXX';
 
     // Mobile Navigation Drawer Toggle
     const mobileToggle = document.getElementById('mobile-toggle');
@@ -1321,8 +2229,8 @@
     const closeIcon = document.getElementById('close-icon');
 
     mobileToggle.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.contains('hidden');
-      if (isOpen) {
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
         closeNav();
       } else {
         mobileMenu.classList.remove('hidden');
@@ -1389,7 +2297,9 @@
 
     // Instant Quick WhatsApp Order Helper
     function quickOrder(productTitle) {
-      const msg = encodeURIComponent(`Hello COCOmint! 🌴\nI would like to order: *${productTitle}*.\nCould you please share payment details and estimated delivery time? Thank you!`);
+      const msg = encodeURIComponent(`Hello COCOmint!
+I would like to order: *${productTitle}*.
+Could you please share payment details and estimated delivery time? Thank you!`);
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
     }
 
@@ -1402,13 +2312,21 @@
       const city = document.getElementById('custCity').value.trim();
       const notes = document.getElementById('custNotes').value.trim();
 
-      const text = `*New Order Enquiry - COCOmint Natural Oils* 🥥\n\n` +
-                   `• *Product:* ${product}\n` +
-                   `• *Quantity:* ${qty}\n` +
-                   `• *Customer Name:* ${name}\n` +
-                   `• *Delivery Location:* ${city}\n` +
-                   (notes ? `• *Notes:* ${notes}\n` : '') +
-                   `\nPlease confirm total price and dispatch date.`;
+      const text = `*New Order Enquiry - COCOmint Natural Oils*
+
+` +
+        `• *Product:* ${product}
+` +
+        `• *Quantity:* ${qty}
+` +
+        `• *Customer Name:* ${name}
+` +
+        `• *Delivery Location:* ${city}
+` +
+        (notes ? `• *Notes:* ${notes}
+` : '') +
+        `
+Please confirm total price and dispatch date.`;
 
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
     }
@@ -1421,10 +2339,14 @@
 
       if (!name) { alert('Please enter your name'); return; }
 
-      const text = `*Website Contact Inquiry - COCOmint* 🌿\n\n` +
-                   `• Name: ${name}\n` +
-                   `• Phone: ${phone || 'Not provided'}\n` +
-                   `• Message: ${msg || 'Interested in COCOmint natural oils'}`;
+      const text = `*Website Contact Inquiry - COCOmint*
+
+` +
+        `• Name: ${name}
+` +
+        `• Phone: ${phone || 'Not provided'}
+` +
+        `• Message: ${msg || 'Interested in COCOmint natural oils'}`;
 
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
     }
@@ -1448,7 +2370,7 @@
         title: 'COCOmint Pure Coconut Oil — 1 Litre Sovereign',
         price: '₹520',
         image: 'assets/images/product-1litre.jpg',
-        badge: '★ Most Bestselling Household Size',
+        badge: 'Bestselling Household Size',
         desc: 'Our signature one-litre volume. Crafted for families who insist on pure unrefined oil for everyday wholesome cooking, oil pulling, and hair wellness.',
         highlights: [
           'Best value for joint families and monthly consumption',
@@ -1491,7 +2413,7 @@
             <p class="font-serif text-2xl sm:text-3xl font-bold text-brand-forest">${p.price}</p>
             <p class="text-xs text-brand-earth/80 font-light leading-relaxed">${p.desc}</p>
             <ul class="space-y-1.5 text-xs text-brand-deepforest pt-1 sm:pt-2">
-              ${p.highlights.map(h => `<li class="flex items-center gap-2"><span class="text-brand-gold">✓</span> ${h}</li>`).join('')}
+              ${p.highlights.map(h => `<li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-brand-gold flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> ${h}</li>`).join('')}
             </ul>
             <div class="pt-3 sm:pt-4">
               <button onclick="quickOrder('${p.title} (${p.price})')" class="btn-gold w-full py-3.5 rounded-xl text-xs uppercase font-bold text-center">
@@ -1515,4 +2437,5 @@
     });
   </script>
 </body>
+
 </html>
